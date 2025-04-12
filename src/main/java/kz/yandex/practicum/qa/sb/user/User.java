@@ -13,7 +13,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Accessors(chain = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
+public class User implements Cloneable {
 
     String email;
 
@@ -26,6 +26,16 @@ public class User {
 
     @JsonIgnore
     String refreshToken;
+
+    @Override
+    public User clone() {
+        return new User()
+                .setEmail(email)
+                .setPassword(password)
+                .setName(name)
+                .setAccessToken(accessToken)
+                .setRefreshToken(refreshToken);
+    }
 
     public boolean hasEmail() {
         return email != null && !email.isBlank();

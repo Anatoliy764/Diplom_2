@@ -3,8 +3,8 @@ POST https://stellarburgers.nomoreparties.site/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "tun.anatoly3",
-  "email": "tun.anatoly3@yandex.kz",
+  "name": "tun.anatoly6",
+  "email": "tun.anatoly6@yandex.kz",
   "password": "qwerty"
 }
 
@@ -13,10 +13,42 @@ Content-Type: application/json
     client.global.set("refreshToken", response.body.refreshToken);
 %}
 
+### update
+PATCH https://stellarburgers.nomoreparties.site/api/auth/user
+Content-Type: application/json
+Authorization: {{accessToken}}
+
+{
+  "name": "tun.anatoly6_6",
+  "email": "tun.anatoly6_6@yandex.kz",
+}
+
 ### info
 GET https://stellarburgers.nomoreparties.site/api/auth/user
 Content-Type: application/json
 Authorization: {{accessToken}}
+
+### login
+POST https://stellarburgers.nomoreparties.site/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "tun.anatoly6@yandex.kz",
+  "password": "qwerty"
+}
+
+> {%
+    client.global.set("accessToken", response.body.accessToken);
+    client.global.set("refreshToken", response.body.refreshToken);
+%}
+
+### logout
+POST https://stellarburgers.nomoreparties.site/api/auth/logout
+Content-Type: application/json
+
+{
+  "token": {{refreshToken}}
+}
 
 ### delete
 DELETE https://stellarburgers.nomoreparties.site/api/auth/user

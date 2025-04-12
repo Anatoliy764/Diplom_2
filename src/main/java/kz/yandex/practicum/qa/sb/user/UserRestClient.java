@@ -3,7 +3,7 @@ package kz.yandex.practicum.qa.sb.user;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import kz.yandex.practicum.qa.sb.common.CommonApiResponse;
+import io.restassured.specification.RequestSpecification;
 import kz.yandex.practicum.qa.sb.common.StellarBurgersApiException;
 import lombok.experimental.UtilityClass;
 import org.apache.http.HttpHeaders;
@@ -11,9 +11,6 @@ import org.apache.http.entity.ContentType;
 import org.hamcrest.CoreMatchers;
 
 import java.util.Map;
-
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.Matchers.hasKey;
 
 @UtilityClass
 public class UserRestClient {
@@ -32,14 +29,6 @@ public class UserRestClient {
                 .body(user)
                 .post("/api/auth/register")
                 .then()
-//                .assertThat()
-//                .statusCode(200).and()
-//                .body("success", CoreMatchers.equalTo(true)).and()
-//                .body("accessToken", notNullValue()).and()
-//                .body("refreshToken", notNullValue()).and()
-//                .body("$", hasKey("user")).and()
-//                .body("user.name", CoreMatchers.equalTo(user.getName())).and()
-//                .body("user.email", CoreMatchers.equalTo(user.getEmail()))
                 .extract().response();
 
         System.out.println(response.prettyPrint());
@@ -67,14 +56,6 @@ public class UserRestClient {
                 .body(new User().setEmail(email).setPassword(password))
                 .post("/api/auth/login")
                 .then()
-//                .assertThat()
-//                .statusCode(200).and()
-//                .body("success", CoreMatchers.equalTo(true)).and()
-//                .body("accessToken", notNullValue()).and()
-//                .body("refreshToken", notNullValue()).and()
-//                .body("$", hasKey("user")).and()
-//                .body("user", hasKey("name")).and()
-//                .body("user.email", CoreMatchers.equalTo(email))
                 .extract().response();
 
         int statusCode = response.getStatusCode();
@@ -143,29 +124,34 @@ public class UserRestClient {
     }
 
     @Step("update user")
-    public User update(User user) {
+    public User update(User user) throws UpdateUserException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
-        if (user.getAccessToken() == null) {
-            throw new IllegalArgumentException("User access token is null");
+//        if (user.getAccessToken() == null) {
+//            throw new IllegalArgumentException("User access token is null");
+//        }
+        RequestSpecification requestSpecification = RestAssured.given()
+                .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
+
+        if(user.getAccessToken() != null) {
+            requestSpecification.header(HttpHeaders.AUTHORIZATION, user.getAccessToken());
         }
-        RestAssured.given()
-                .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
-                .header(HttpHeaders.AUTHORIZATION, user.getAccessToken())
-                .body(user)
+        Response response = requestSpecification.body(user)
                 .patch("/api/auth/user")
                 .then()
-                .assertThat()
-                .statusCode(200).and()
-                .body("success", CoreMatchers.equalTo(true)).and()
-                .body("accessToken", notNullValue()).and()
-                .body("refreshToken", notNullValue()).and()
-                .body("$", hasKey("user")).and()
-                .body("user", hasKey("name")).and()
-                .body("user.email", hasKey("email"));
+                .extract().response();
 
-        return user;
+        System.out.println(response.prettyPrint());
+
+        int statusCode = response.getStatusCode();
+        UserResponse userResponse = response.then().extract().as(UserResponse.class);
+        if(statusCode != 200) {
+            throw new UpdateUserException(userResponse.getMessage(), statusCode);
+        }
+        userResponse.getUser().setPassword(user.getPassword());
+
+        return userResponse.getUser();
     }
 
     @Step("delete user")
