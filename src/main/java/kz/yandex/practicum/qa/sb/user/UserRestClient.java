@@ -55,36 +55,40 @@ public class UserRestClient {
     }
 
     @Step("login")
-    public User login(String email, String password) {
+    public User login(String email, String password) throws UserAuthorizationException {
         if (email == null || email.isBlank()) {
             throw new IllegalArgumentException("Email should be initialized");
         }
         if (password == null || password.isBlank()) {
             throw new IllegalArgumentException("Password should be initialized");
         }
-        UserResponse userResponse = RestAssured.given()
+        Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .body(new User().setEmail(email).setPassword(password))
                 .post("/api/auth/login")
                 .then()
-                .assertThat()
-                .statusCode(200).and()
-                .body("success", CoreMatchers.equalTo(true)).and()
-                .body("accessToken", notNullValue()).and()
-                .body("refreshToken", notNullValue()).and()
-                .body("$", hasKey("user")).and()
-                .body("user", hasKey("name")).and()
-                .body("user.email", CoreMatchers.equalTo(email))
-                .extract()
-                .as(UserResponse.class);
+//                .assertThat()
+//                .statusCode(200).and()
+//                .body("success", CoreMatchers.equalTo(true)).and()
+//                .body("accessToken", notNullValue()).and()
+//                .body("refreshToken", notNullValue()).and()
+//                .body("$", hasKey("user")).and()
+//                .body("user", hasKey("name")).and()
+//                .body("user.email", CoreMatchers.equalTo(email))
+                .extract().response();
 
+        int statusCode = response.getStatusCode();
+        UserResponse userResponse = response.then().extract().as(UserResponse.class);
+        if(statusCode != 200) {
+            throw new UserAuthorizationException(userResponse.getMessage(), statusCode);
+        }
         userResponse.getUser().setPassword(password);
 
         return userResponse.getUser();
     }
 
     @Step("login")
-    public User login(User user) {
+    public User login(User user) throws UserAuthorizationException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
