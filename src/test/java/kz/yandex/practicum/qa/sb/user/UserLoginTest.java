@@ -1,6 +1,8 @@
 package kz.yandex.practicum.qa.sb.user;
 
 import io.qameta.allure.junit4.DisplayName;
+import kz.yandex.practicum.qa.sb.common.ApiException;
+import kz.yandex.practicum.qa.sb.common.AuthorizationException;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
@@ -20,7 +22,7 @@ public class UserLoginTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @BeforeClass
-    public static void setUp() throws CreateUserException {
+    public static void setUp() throws ApiException {
 
         USER.setEmail(FAKER.internet().emailAddress())
                 .setPassword(FAKER.internet().password())
@@ -32,7 +34,7 @@ public class UserLoginTest {
     }
 
     @AfterClass
-    public static void tearDown() {
+    public static void tearDown() throws ApiException {
         UserRestClient.delete(USER.getAccessToken());
     }
 
@@ -42,15 +44,15 @@ public class UserLoginTest {
         try {
             User authorizedUser = UserRestClient.login(USER);
             Assert.assertTrue(authorizedUser.isAllTokensInitialized());
-        } catch (UserAuthorizationException e) {
+        } catch (ApiException e) {
             Assert.fail(e.getMessage());
         }
     }
 
     @Test
     @DisplayName("логин с неверным логином и паролем")
-    public void testLoginWithWrongCredentialsShouldFail() throws UserAuthorizationException {
-        expectedException.expect(UserAuthorizationException.class);
+    public void testLoginWithWrongCredentialsShouldFail() throws ApiException {
+        expectedException.expect(AuthorizationException.class);
         expectedException.expectMessage("email or password are incorrect");
 
         UserRestClient.login(USER.getEmail(), USER.getPassword() + "1");

@@ -4,11 +4,12 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import kz.yandex.practicum.qa.sb.common.StellarBurgersApiException;
+import kz.yandex.practicum.qa.sb.common.ApiException;
+import kz.yandex.practicum.qa.sb.common.ApiResponseValidator;
+import kz.yandex.practicum.qa.sb.common.Constants;
 import lombok.experimental.UtilityClass;
 import org.apache.http.HttpHeaders;
 import org.apache.http.entity.ContentType;
-import org.hamcrest.CoreMatchers;
 
 import java.util.Map;
 
@@ -16,35 +17,31 @@ import java.util.Map;
 public class UserRestClient {
 
     static {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+        RestAssured.baseURI = Constants.STELLAR_BURGERS_API_BASE_URL;
     }
 
     @Step("create user")
-    public User create(User user) throws CreateUserException {
+    public User create(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .body(user)
-                .post("/api/auth/register")
+                .post("/auth/register")
                 .then()
                 .extract().response();
 
-        System.out.println(response.prettyPrint());
+        ApiResponseValidator.validate(response);
 
-        int statusCode = response.getStatusCode();
         UserResponse userResponse = response.then().extract().as(UserResponse.class);
-        if(statusCode != 200) {
-            throw new CreateUserException(userResponse.getMessage(), statusCode);
-        }
         userResponse.getUser().setPassword(user.getPassword());
 
         return userResponse.getUser();
     }
 
     @Step("login")
-    public User login(String email, String password) throws UserAuthorizationException {
+    public User login(String email, String password) throws ApiException {
         if (email == null || email.isBlank()) {
             throw new IllegalArgumentException("Email should be initialized");
         }
@@ -54,22 +51,21 @@ public class UserRestClient {
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .body(new User().setEmail(email).setPassword(password))
-                .post("/api/auth/login")
+                .post("/auth/login")
                 .then()
-                .extract().response();
+                .extract()
+                .response();
 
-        int statusCode = response.getStatusCode();
+        ApiResponseValidator.validate(response);
+
         UserResponse userResponse = response.then().extract().as(UserResponse.class);
-        if(statusCode != 200) {
-            throw new UserAuthorizationException(userResponse.getMessage(), statusCode);
-        }
         userResponse.getUser().setPassword(password);
 
         return userResponse.getUser();
     }
 
     @Step("login")
-    public User login(User user) throws UserAuthorizationException {
+    public User login(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -77,22 +73,24 @@ public class UserRestClient {
     }
 
     @Step("logout")
-    public void logout(String accessToken) {
+    public void logout(String accessToken) throws ApiException {
         if (accessToken == null || accessToken.isBlank()) {
             throw new IllegalArgumentException("User access token should be initialized");
         }
-        RestAssured.given()
+        Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .body(Map.of("token", accessToken))
-                .post("/api/auth/logout")
+                .post("/auth/logout")
                 .then()
-                .assertThat()
-                .statusCode(200).and()
-                .body("success", CoreMatchers.equalTo(true));
+                .extract()
+                .response();
+
+        ApiResponseValidator.validate(response);
+
     }
 
     @Step("logout")
-    public void logout(User user) {
+    public void logout(User user) throws ApiException {
         if(user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -100,37 +98,27 @@ public class UserRestClient {
     }
 
     @Step("get info")
-    public User getInfo(String accessToken) throws StellarBurgersApiException {
+    public User getInfo(String accessToken) throws ApiException {
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .header(HttpHeaders.AUTHORIZATION, accessToken)
-                .get("/api/auth/user")
+                .get("/auth/user")
                 .then()
                 .extract()
                 .response();
 
-        System.out.println(response.prettyPrint());
+        ApiResponseValidator.validate(response);
 
-        int statusCode = response.getStatusCode();
         UserResponse userResponse = response.then().extract().as(UserResponse.class);
-        if(statusCode == 404) {
-            throw new UserNotFoundException(userResponse.getMessage(), statusCode);
-        }
-        if(statusCode != 200) {
-            throw new StellarBurgersApiException(userResponse.getMessage(), statusCode);
-        }
-
         return userResponse.getUser().setAccessToken(accessToken);
     }
 
     @Step("update user")
-    public User update(User user) throws UpdateUserException {
+    public User update(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
-//        if (user.getAccessToken() == null) {
-//            throw new IllegalArgumentException("User access token is null");
-//        }
+
         RequestSpecification requestSpecification = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
 
@@ -138,24 +126,21 @@ public class UserRestClient {
             requestSpecification.header(HttpHeaders.AUTHORIZATION, user.getAccessToken());
         }
         Response response = requestSpecification.body(user)
-                .patch("/api/auth/user")
+                .patch("/auth/user")
                 .then()
                 .extract().response();
 
-        System.out.println(response.prettyPrint());
+        ApiResponseValidator.validate(response);
 
-        int statusCode = response.getStatusCode();
         UserResponse userResponse = response.then().extract().as(UserResponse.class);
-        if(statusCode != 200) {
-            throw new UpdateUserException(userResponse.getMessage(), statusCode);
-        }
+
         userResponse.getUser().setPassword(user.getPassword());
 
         return userResponse.getUser();
     }
 
     @Step("delete user")
-    public void delete(User user) {
+    public void delete(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -163,22 +148,17 @@ public class UserRestClient {
     }
 
     @Step("delete user")
-    public void delete(String accessToken) {
+    public void delete(String accessToken) throws ApiException {
         if (accessToken == null || accessToken.isBlank()) {
             throw new IllegalArgumentException("User access token should be initialized");
         }
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .header(HttpHeaders.AUTHORIZATION, accessToken)
-                .delete("/api/auth/user")
+                .delete("/auth/user")
                 .then()
                 .extract().response();
 
-        System.out.println(response.prettyPrint());
-
-        response.then().assertThat()
-                .statusCode(202).and()
-                .body("success", CoreMatchers.equalTo(true)).and()
-                .body("message", CoreMatchers.equalTo("User successfully removed"));
+        ApiResponseValidator.validate(response);
     }
 }

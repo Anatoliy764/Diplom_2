@@ -1,6 +1,7 @@
 package kz.yandex.practicum.qa.sb.user;
 
 import io.qameta.allure.junit4.DisplayName;
+import kz.yandex.practicum.qa.sb.common.ApiException;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -26,7 +27,7 @@ public class UserUpdateTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @BeforeClass
-    public static void setUp() throws CreateUserException, UserAuthorizationException {
+    public static void setUp() throws ApiException {
 
         USER_AUTHORIZED.setEmail(FAKER.internet().emailAddress())
                 .setPassword(FAKER.internet().password())
@@ -49,7 +50,7 @@ public class UserUpdateTest {
     }
 
     @AfterClass
-    public static void tearDown() {
+    public static void tearDown() throws ApiException {
         UserRestClient.delete(USER_AUTHORIZED.getAccessToken());
         UserRestClient.delete(USER_UNAUTHORIZED.getAccessToken());
     }
@@ -61,16 +62,16 @@ public class UserUpdateTest {
             String newEmail = USER_AUTHORIZED.getEmail() + "_updated";
             User updatedUser = UserRestClient.update(USER_AUTHORIZED.clone().setEmail(newEmail));
             assertEquals(newEmail, updatedUser.getEmail());
-        } catch (UpdateUserException e) {
+        } catch (ApiException e) {
             fail(e.getMessage());
         }
     }
 
     @Test
     @DisplayName("Изменение email пользователя с авторизацией на уже использующийся")
-    public void testUpdateAuthorizedUserExistentEmail() throws UpdateUserException {
+    public void testUpdateAuthorizedUserExistentEmail() throws ApiException {
 
-        expectedException.expect(UpdateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("User with such email already exists");
 
         String newEmail = USER_UNAUTHORIZED.getEmail() + "_updated";
@@ -85,7 +86,7 @@ public class UserUpdateTest {
             String newName = USER_AUTHORIZED.getName() + "_updated";
             User updatedUser = UserRestClient.update(USER_AUTHORIZED.clone().setName(newName));
             assertEquals(newName, updatedUser.getName());
-        } catch (UpdateUserException e) {
+        } catch (ApiException e) {
             fail(e.getMessage());
         }
     }
@@ -97,16 +98,16 @@ public class UserUpdateTest {
             String newPassword = USER_AUTHORIZED.getPassword() + "_updated";
             User updatedUser = UserRestClient.update(USER_AUTHORIZED.clone().setPassword(newPassword));
             assertEquals(newPassword, updatedUser.getPassword());
-        } catch (UpdateUserException e) {
+        } catch (ApiException e) {
             fail(e.getMessage());
         }
     }
 
     @Test
     @DisplayName("Изменение email пользователя с авторизацией")
-    public void testUpdateUnauthorizedUserEmail() throws UpdateUserException {
+    public void testUpdateUnauthorizedUserEmail() throws ApiException {
 
-        expectedException.expect(UpdateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("You should be authorised");
 
         String newEmail = USER_UNAUTHORIZED.getEmail() + "_updated";
@@ -116,9 +117,9 @@ public class UserUpdateTest {
 
     @Test
     @DisplayName("Изменение email пользователя с авторизацией")
-    public void testUpdateUnauthorizedUserName() throws UpdateUserException {
+    public void testUpdateUnauthorizedUserName() throws ApiException {
 
-        expectedException.expect(UpdateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("You should be authorised");
 
         String newName = USER_UNAUTHORIZED.getName() + "_updated";
@@ -128,9 +129,9 @@ public class UserUpdateTest {
 
     @Test
     @DisplayName("Изменение email пользователя с авторизацией")
-    public void testUpdateUnauthorizedUserPassword() throws UpdateUserException {
+    public void testUpdateUnauthorizedUserPassword() throws ApiException {
 
-        expectedException.expect(UpdateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("You should be authorised");
 
         String newPassword = USER_UNAUTHORIZED.getPassword() + "_updated";

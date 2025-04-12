@@ -64,4 +64,15 @@ public class User implements Cloneable {
     public boolean isAllTokensInitialized() {
         return hasAccessToken() && hasRefreshToken();
     }
+
+    public User from(User user) {
+        if(user != null) {
+            setEmail(user.getEmail());
+            setName(user.getName());
+            setPassword(user.getPassword());
+            setAccessToken(user.getAccessToken());
+            setRefreshToken(user.getRefreshToken());
+        }
+        return this;
+    }
 }

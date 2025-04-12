@@ -3,7 +3,11 @@ package kz.yandex.practicum.qa.sb.user;
 import io.qameta.allure.junit4.DisplayName;
 import kz.yandex.practicum.qa.sb.OrderedRunner;
 import kz.yandex.practicum.qa.sb.TestOrder;
-import org.junit.*;
+import kz.yandex.practicum.qa.sb.common.ApiException;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
@@ -53,7 +57,7 @@ public class UserCreateTest {
 
             Assert.assertTrue(createdUser.isAllTokensInitialized());
 
-        } catch (CreateUserException e) {
+        } catch (ApiException e) {
             Assert.fail(e.getMessage());
         }
     }
@@ -61,9 +65,9 @@ public class UserCreateTest {
     @Test
     @TestOrder(2)
     @DisplayName("создать пользователя, который уже зарегистрирован")
-    public void testCreateUserAlreadyRegisteredShouldReturn403() throws CreateUserException {
+    public void testCreateUserAlreadyRegisteredShouldReturn403() throws ApiException {
 
-        expectedException.expect(CreateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("User already exists");
 
         Assert.assertFalse(USERS.isEmpty());
@@ -76,9 +80,9 @@ public class UserCreateTest {
     @Test
     @TestOrder(3)
     @DisplayName("создать пользователя и не заполнить одно из обязательных полей")
-    public void testCreateUserWithoutRequiredFieldsShouldReturn403() throws CreateUserException {
+    public void testCreateUserWithoutRequiredFieldsShouldReturn403() throws ApiException {
 
-        expectedException.expect(CreateUserException.class);
+        expectedException.expect(ApiException.class);
         expectedException.expectMessage("Email, password and name are required fields");
 
         USERS.add(UserRestClient.create(new User()
