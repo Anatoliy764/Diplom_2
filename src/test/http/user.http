@@ -1,0 +1,24 @@
+### create
+POST https://stellarburgers.nomoreparties.site/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "tun.anatoly3",
+  "email": "tun.anatoly3@yandex.kz",
+  "password": "qwerty"
+}
+
+> {%
+    client.global.set("accessToken", response.body.accessToken);
+    client.global.set("refreshToken", response.body.refreshToken);
+%}
+
+### info
+GET https://stellarburgers.nomoreparties.site/api/auth/user
+Content-Type: application/json
+Authorization: {{accessToken}}
+
+### delete
+DELETE https://stellarburgers.nomoreparties.site/api/auth/user
+Content-Type: application/json
+Authorization: {{accessToken}}
