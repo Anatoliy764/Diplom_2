@@ -7,45 +7,36 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.ApiResponseValidator;
-import kz.yandex.practicum.qa.sb.common.Constants;
-import kz.yandex.practicum.qa.sb.ingredient.IngredientRestClient;
+import kz.yandex.practicum.qa.sb.common.CommonRestClient;
 import org.apache.http.HttpHeaders;
 import org.apache.http.entity.ContentType;
 
-import java.util.List;
+import java.util.Collection;
 import java.util.Map;
 
 
-public final class OrderRestClient {
+public final class OrderRestClient extends CommonRestClient {
 
-    static {
-        RestAssured.baseURI = Constants.STELLAR_BURGERS_API_BASE_URL;
-    }
+    private String accessToken;
 
-    private final String accessToken;
-    private final String refreshToken;
-
-    private OrderRestClient(String accessToken, String refreshToken) {
-        this.accessToken = accessToken;
-        this.refreshToken = refreshToken;
-    }
-
-    public static OrderRestClient withTokens(String accessToken, String refreshToken) {
-        return new OrderRestClient(accessToken, refreshToken);
+    public static OrderRestClient withAccessToken(String accessToken) {
+        OrderRestClient orderRestClient = new OrderRestClient();
+        orderRestClient.accessToken = accessToken;
+        return orderRestClient;
     }
 
     @Step("create order")
-    public Order createOrder(List<String> ingredientIds) throws ApiException {
+    public Order createOrder(Collection<String> ingredientIds) throws ApiException {
         return createOrder(ingredientIds, accessToken);
     }
 
     @Step("create order")
-    public static Order createOrder(List<String> ingredientIds, String accessToken) throws ApiException {
+    public static Order createOrder(Collection<String> ingredientIds, String accessToken) throws ApiException {
 
         RequestSpecification requestSpecification = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
 
-        if (accessToken != null) {
+        if (accessToken != null && !accessToken.isBlank()) {
             requestSpecification.header(HttpHeaders.AUTHORIZATION, accessToken);
         }
 
@@ -57,17 +48,30 @@ public final class OrderRestClient {
 
         ApiResponseValidator.validate(response);
 
-        String orderName = response.path("name");
-        Integer orderNumber = response.path("order.number");
+        return response.then().extract().as(CreateOrderResponse.class).getOrder();
+    }
 
-        Order order = new Order()
-                .setName(orderName)
-                .setNumber(orderNumber);
+    @Step("get user orders")
+    public GetUserOrdersResponse getUserOrders() throws ApiException {
+        return getUserOrders(accessToken);
+    }
 
-        for (String id : ingredientIds) {
-            order.addIngredient(IngredientRestClient.getIngredient(id));
+    @Step("get user orders")
+    public static GetUserOrdersResponse getUserOrders(String accessToken) throws ApiException {
+        RequestSpecification requestSpecification = RestAssured.given()
+                .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
+
+        if (accessToken != null && !accessToken.isBlank()) {
+            requestSpecification.header(HttpHeaders.AUTHORIZATION, accessToken);
         }
 
-        return order;
+        Response response = requestSpecification.get("/orders")
+                .then()
+                .extract()
+                .response();
+
+        ApiResponseValidator.validate(response);
+
+        return response.then().extract().as(GetUserOrdersResponse.class);
     }
 }

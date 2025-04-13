@@ -5,7 +5,6 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.AuthorizationException;
-import kz.yandex.practicum.qa.sb.ingredient.Ingredient;
 import kz.yandex.practicum.qa.sb.ingredient.IngredientRestClient;
 import kz.yandex.practicum.qa.sb.user.User;
 import kz.yandex.practicum.qa.sb.user.UserRestClient;
@@ -19,8 +18,6 @@ import org.junit.runners.Parameterized;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
 import static org.junit.Assert.*;
@@ -38,19 +35,16 @@ import static org.junit.Assert.*;
 @RunWith(Parameterized.class)
 public class CreateOrderTest {
 
-    private static final Map<String, Ingredient> INGREDIENTS;
 
     private static final User USER;
 
     static {
         try {
-            INGREDIENTS = IngredientRestClient.getIngredients()
-                    .stream().collect(Collectors.toMap(Ingredient::getId, Function.identity()));
-
             USER = UserRestClient.login(UserRestClient.create(new User()
                     .setName(FAKER.name().username())
                     .setEmail(FAKER.internet().emailAddress())
                     .setPassword(FAKER.internet().password())));
+
         } catch (ApiException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();
@@ -73,12 +67,12 @@ public class CreateOrderTest {
     }
 
     @Parameterized.Parameters
-    public static Collection getOrdersForTest() {
+    public static Collection getOrdersForTest() throws ApiException {
 
         // ingredient ids for order, expected exception, expected exception message, expected HTTP status code
         return List.of(new Object[][]{
                 // с ингредиентами,
-                {getRandomIngredientIds(ThreadLocalRandom.current().nextInt(1, 4)), null, null, null},
+                {IngredientRestClient.getRandomIngredientIds(ThreadLocalRandom.current().nextInt(1, 4)), null, null},
                 // без ингредиентов,
                 {Collections.emptyList(), "Ingredient ids must be provided", 400},
                 // с неверным хешем ингредиентов
@@ -91,7 +85,7 @@ public class CreateOrderTest {
     public void testCreateOrderAuthorized() {
 
         try {
-            OrderRestClient.withTokens(USER.getAccessToken(), USER.getRefreshToken()).createOrder(ingredientIds);
+            OrderRestClient.withAccessToken(USER.getAccessToken()).createOrder(ingredientIds);
         } catch (ApiException e) {
             if(!Objects.equals(expectedExceptionMessage, e.getMessage())) {
                 fail(String.format("Expected exception message is: [%s] but was: [%s]", expectedExceptionMessage, e.getMessage()));
@@ -114,22 +108,4 @@ public class CreateOrderTest {
         assertEquals("You should be authorised", authorizationException.getMessage());
 
     }
-
-    private static String getRandomIngredientId() {
-        return getRandomIngredientIds(1).iterator().next();
-    }
-
-    private static Collection<String> getRandomIngredientIds(int count) {
-        if(count < 1) {
-            count = 1;
-        }
-        List<String> ingredientIds = new ArrayList<>(INGREDIENTS.keySet());
-        List<String> randomIngredientIds = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            int randomIndex = ThreadLocalRandom.current().nextInt(0, INGREDIENTS.size() - 1);
-            randomIngredientIds.add(ingredientIds.get(randomIndex));
-        }
-        return randomIngredientIds;
-    }
-
 }

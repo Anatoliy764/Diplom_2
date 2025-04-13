@@ -3,8 +3,8 @@ POST https://stellarburgers.nomoreparties.site/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "tun.anatoly6",
-  "email": "tun.anatoly6@yandex.kz",
+  "name": "tun.anatoly7",
+  "email": "tun.anatoly7@yandex.kz",
   "password": "qwerty"
 }
 
@@ -33,7 +33,7 @@ POST https://stellarburgers.nomoreparties.site/api/auth/login
 Content-Type: application/json
 
 {
-  "email": "tun.anatoly6@yandex.kz",
+  "email": "tun.anatoly7@yandex.kz",
   "password": "qwerty"
 }
 

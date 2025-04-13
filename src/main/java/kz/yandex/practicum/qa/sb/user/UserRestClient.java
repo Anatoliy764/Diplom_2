@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.ApiResponseValidator;
-import kz.yandex.practicum.qa.sb.common.Constants;
+import kz.yandex.practicum.qa.sb.common.CommonRestClient;
 import lombok.experimental.UtilityClass;
 import org.apache.http.HttpHeaders;
 import org.apache.http.entity.ContentType;
@@ -14,14 +14,10 @@ import org.apache.http.entity.ContentType;
 import java.util.Map;
 
 @UtilityClass
-public class UserRestClient {
-
-    static {
-        RestAssured.baseURI = Constants.STELLAR_BURGERS_API_BASE_URL;
-    }
+public final class UserRestClient extends CommonRestClient {
 
     @Step("create user")
-    public User create(User user) throws ApiException {
+    public static User create(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -41,7 +37,7 @@ public class UserRestClient {
     }
 
     @Step("login")
-    public User login(String email, String password) throws ApiException {
+    public static User login(String email, String password) throws ApiException {
         if (email == null || email.isBlank()) {
             throw new IllegalArgumentException("Email should be initialized");
         }
@@ -65,7 +61,7 @@ public class UserRestClient {
     }
 
     @Step("login")
-    public User login(User user) throws ApiException {
+    public static User login(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -73,7 +69,7 @@ public class UserRestClient {
     }
 
     @Step("logout")
-    public void logout(String accessToken) throws ApiException {
+    public static void logout(String accessToken) throws ApiException {
         if (accessToken == null || accessToken.isBlank()) {
             throw new IllegalArgumentException("User access token should be initialized");
         }
@@ -90,7 +86,7 @@ public class UserRestClient {
     }
 
     @Step("logout")
-    public void logout(User user) throws ApiException {
+    public static void logout(User user) throws ApiException {
         if(user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -98,7 +94,7 @@ public class UserRestClient {
     }
 
     @Step("get info")
-    public User getInfo(String accessToken) throws ApiException {
+    public static User getInfo(String accessToken) throws ApiException {
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .header(HttpHeaders.AUTHORIZATION, accessToken)
@@ -114,7 +110,7 @@ public class UserRestClient {
     }
 
     @Step("update user")
-    public User update(User user) throws ApiException {
+    public static User update(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -140,7 +136,7 @@ public class UserRestClient {
     }
 
     @Step("delete user")
-    public void delete(User user) throws ApiException {
+    public static void delete(User user) throws ApiException {
         if (user == null) {
             throw new IllegalArgumentException("User is null");
         }
@@ -148,7 +144,7 @@ public class UserRestClient {
     }
 
     @Step("delete user")
-    public void delete(String accessToken) throws ApiException {
+    public static void delete(String accessToken) throws ApiException {
         if (accessToken == null || accessToken.isBlank()) {
             throw new IllegalArgumentException("User access token should be initialized");
         }

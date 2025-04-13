@@ -5,16 +5,14 @@ import kz.yandex.practicum.qa.sb.OrderedRunner;
 import kz.yandex.practicum.qa.sb.TestOrder;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
+import static org.junit.Assert.*;
 
 /**
  * Задание 2: API
@@ -27,9 +25,6 @@ import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
 public class UserCreateTest {
 
     private static final List<User> USERS = new LinkedList<>();
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
 
     @AfterClass
     public static void tearDown() {
@@ -55,38 +50,38 @@ public class UserCreateTest {
 
             USERS.add(createdUser);
 
-            Assert.assertTrue(createdUser.isAllTokensInitialized());
+            assertTrue(createdUser.isAllTokensInitialized());
 
         } catch (ApiException e) {
-            Assert.fail(e.getMessage());
+            fail(e.getMessage());
         }
     }
 
     @Test
     @TestOrder(2)
     @DisplayName("создать пользователя, который уже зарегистрирован")
-    public void testCreateUserAlreadyRegisteredShouldReturn403() throws ApiException {
+    public void testCreateUserAlreadyRegisteredShouldReturn403() {
 
-        expectedException.expect(ApiException.class);
-        expectedException.expectMessage("User already exists");
+        assertFalse(USERS.isEmpty());
 
-        Assert.assertFalse(USERS.isEmpty());
+        ApiException apiException = assertThrows(ApiException.class, () -> {
+            USERS.add(UserRestClient.create(USERS.get(0)));
+        });
 
-        User existentUser = USERS.get(0);
-
-        USERS.add(UserRestClient.create(existentUser));
+        assertEquals("User already exists", apiException.getMessage());
     }
 
     @Test
     @TestOrder(3)
     @DisplayName("создать пользователя и не заполнить одно из обязательных полей")
-    public void testCreateUserWithoutRequiredFieldsShouldReturn403() throws ApiException {
+    public void testCreateUserWithoutRequiredFieldsShouldReturn403() {
 
-        expectedException.expect(ApiException.class);
-        expectedException.expectMessage("Email, password and name are required fields");
+        ApiException apiException = assertThrows(ApiException.class, () -> {
+            USERS.add(UserRestClient.create(new User()
+                    .setEmail(FAKER.internet().emailAddress())
+                    .setPassword(FAKER.internet().password())));
+        });
 
-        USERS.add(UserRestClient.create(new User()
-                .setEmail(FAKER.internet().emailAddress())
-                .setPassword(FAKER.internet().password())));
+        assertEquals("Email, password and name are required fields", apiException.getMessage());
     }
 }

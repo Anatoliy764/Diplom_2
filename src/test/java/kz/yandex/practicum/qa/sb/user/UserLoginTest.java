@@ -3,10 +3,11 @@ package kz.yandex.practicum.qa.sb.user;
 import io.qameta.allure.junit4.DisplayName;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.AuthorizationException;
-import org.junit.*;
-import org.junit.rules.ExpectedException;
+import org.junit.AfterClass;
+import org.junit.Test;
 
 import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
+import static org.junit.Assert.*;
 
 /**
  * Задание 2: API
@@ -16,21 +17,18 @@ import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
  */
 public class UserLoginTest {
 
-    private static final User USER = new User();
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    @BeforeClass
-    public static void setUp() throws ApiException {
-
-        USER.setEmail(FAKER.internet().emailAddress())
-                .setPassword(FAKER.internet().password())
-                .setName(FAKER.name().username());
-
-        User user = UserRestClient.create(USER);
-        USER.setAccessToken(user.getAccessToken());
-        USER.setRefreshToken(user.getRefreshToken());
+    private static final User USER;
+    
+    static {
+        try {
+            USER = UserRestClient.create(new User().setEmail(FAKER.internet().emailAddress())
+                    .setPassword(FAKER.internet().password())
+                    .setName(FAKER.name().username()));
+        } catch (ApiException e) {
+            System.err.println(e.getMessage());
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
     }
 
     @AfterClass
@@ -43,18 +41,22 @@ public class UserLoginTest {
     public void testLoginAsExistentUserShouldBeOk() {
         try {
             User authorizedUser = UserRestClient.login(USER);
-            Assert.assertTrue(authorizedUser.isAllTokensInitialized());
+            assertTrue(authorizedUser.isAllTokensInitialized());
+            assertNotEquals(USER.getAccessToken(), authorizedUser.getAccessToken());
+            assertNotEquals(USER.getRefreshToken(), authorizedUser.getRefreshToken());
         } catch (ApiException e) {
-            Assert.fail(e.getMessage());
+            fail(e.getMessage());
         }
     }
 
     @Test
     @DisplayName("логин с неверным логином и паролем")
-    public void testLoginWithWrongCredentialsShouldFail() throws ApiException {
-        expectedException.expect(AuthorizationException.class);
-        expectedException.expectMessage("email or password are incorrect");
+    public void testLoginWithWrongCredentialsShouldFail() {
 
-        UserRestClient.login(USER.getEmail(), USER.getPassword() + "1");
+        AuthorizationException authorizationException = assertThrows(AuthorizationException.class, () -> {
+            UserRestClient.login(USER.getEmail(), USER.getPassword() + "1");
+        });
+
+        assertEquals("email or password are incorrect", authorizationException.getMessage());
     }
 }

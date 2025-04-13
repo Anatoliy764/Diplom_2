@@ -1,12 +1,15 @@
 package kz.yandex.practicum.qa.sb.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import lombok.experimental.FieldDefaults;
+
+import java.time.ZonedDateTime;
 
 @Data
 @NoArgsConstructor
@@ -20,6 +23,12 @@ public class User implements Cloneable {
     String password;
 
     String name;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    ZonedDateTime createdAt;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    ZonedDateTime updatedAt;
 
     @JsonIgnore
     String accessToken;
@@ -49,6 +58,7 @@ public class User implements Cloneable {
         return name != null && !name.isBlank();
     }
 
+    @JsonIgnore
     public boolean isAllFieldsInitialized() {
         return hasEmail() && hasPassword() && hasName();
     }
@@ -61,6 +71,7 @@ public class User implements Cloneable {
         return refreshToken != null && !refreshToken.isBlank();
     }
 
+    @JsonIgnore
     public boolean isAllTokensInitialized() {
         return hasAccessToken() && hasRefreshToken();
     }
