@@ -1,5 +1,7 @@
 package kz.yandex.practicum.qa.sb.order;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -82,6 +84,8 @@ public class CreateOrderTest {
 
     // с авторизацией,
     @Test
+    @DisplayName("Создание заказа с авторизацией")
+    @Description("с ингредиентами, без ингредиентов, с неверным хешем ингредиентов.")
     public void testCreateOrderAuthorized() {
 
         try {
@@ -98,6 +102,7 @@ public class CreateOrderTest {
 
     // без авторизации,
     @Test
+    @DisplayName("Создание заказа без авторизации")
     public void testCreateOrderUnauthorized() {
 
         AuthorizationException authorizationException = assertThrows(AuthorizationException.class, () -> {

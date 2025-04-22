@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: kz.yandex.practicum.qa.sb.user.UserLoginTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.057 s -- in kz.yandex.practicum.qa.sb.user.UserLoginTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.942 s -- in kz.yandex.practicum.qa.sb.user.UserLoginTest

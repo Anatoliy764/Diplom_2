@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="11.218" tests="6" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="11.081" tests="6" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\wongs\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959\surefirebooter-20250413142625471_3.jar C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959 2025-04-13T14-26-25_137-jvmRun1 surefire-20250413142625471_1tmp surefire_0-20250413142625471_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729 2025-04-22T21-59-57_849-jvmRun1 surefire-20250422215958172_1tmp surefire_0-20250422215958172_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959\surefirebooter-20250413142625471_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -61,11 +61,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testCreateOrderUnauthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.375">
+  <testcase name="testCreateOrderUnauthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.351">
     <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:103)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,29 +118,29 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "тамара.панфилов@ya.ru",
-    "password": "uboy5zoyopfrhjy",
-    "name": "виталий.ершова"
+    "email": "варвара.третьякова@ya.ru",
+    "password": "7eki9bwg8511m",
+    "name": "кира.сысоев"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:30 GMT
+Date: Tue, 22 Apr 2025 16:00:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 401
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MCwiZXhwIjoxNzQ0NTMzOTkwfQ.Ay4NArnDinmHLDiR-6E7LH-MglF21oxslHGSmyYRk0c
-ETag: W/"191-It5cNIgunMMk65RyC2xi471avIY"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwMywiZXhwIjoxNzQ1MzM4ODAzfQ.c21bjn8lLPCjeuzg7-xvPLMKrHHUErEsuvKc928OTzI
+ETag: W/"191-D8IRma7oQyzrScS6pjSuxHmFpt0"
 
 {
     "success": true,
     "user": {
-        "email": "тамара.панфилов@ya.ru",
-        "name": "виталий.ершова"
+        "email": "варвара.третьякова@ya.ru",
+        "name": "кира.сысоев"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MCwiZXhwIjoxNzQ0NTMzOTkwfQ.Ay4NArnDinmHLDiR-6E7LH-MglF21oxslHGSmyYRk0c",
-    "refreshToken": "864e5adf72fd5e85013a3e121b445699a91b6262074cefb71eff1fb765d6998988dc433ddff85a88"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwMywiZXhwIjoxNzQ1MzM4ODAzfQ.c21bjn8lLPCjeuzg7-xvPLMKrHHUErEsuvKc928OTzI",
+    "refreshToken": "1f94fbd3cd439de5b2aa708327caab8f8ecc4b35f0a5f6823b3a215a3d7e9307e85e182222e09891"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
@@ -155,27 +155,27 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "тамара.панфилов@ya.ru",
-    "password": "uboy5zoyopfrhjy",
+    "email": "варвара.третьякова@ya.ru",
+    "password": "7eki9bwg8511m",
     "name": null
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:32 GMT
+Date: Tue, 22 Apr 2025 16:00:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 401
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"191-n9cn3stzsdWdU1a2D4jwedWf5gg"
+ETag: W/"191-PZoVfdQeXEyPh77yCCEtiyqZUpA"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0",
-    "refreshToken": "26f9cc06cf1656a99064c754ba3cfc9b4b282c378fac197921ba159d0737a93752b2b5426c7c9bc4",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU",
+    "refreshToken": "6cbaf1ad1ec894d5a93682689043deaa1c410d4d4d80e4626714ec6bba48c96a76c7be2362b756d7",
     "user": {
-        "email": "тамара.панфилов@ya.ru",
-        "name": "виталий.ершова"
+        "email": "варвара.третьякова@ya.ru",
+        "name": "кира.сысоев"
     }
 }
 Request method:	GET
@@ -192,7 +192,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:32 GMT
+Date: Tue, 22 Apr 2025 16:00:05 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 5957
 Connection: keep-alive
@@ -451,41 +451,41 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:32 GMT
+Date: Tue, 22 Apr 2025 16:00:05 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 87
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"57-mS2jc/vE4usC7YyDvf21Pb+jIRA"
+ETag: W/"57-4qFA9ZIxB8XHg6ZVqzURPhA8qog"
 
 {
     "success": true,
     "name": "Антарианский бургер",
     "order": {
-        "number": 7545
+        "number": 9123
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:32 GMT
+Date: Tue, 22 Apr 2025 16:00:05 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 87
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"57-mS2jc/vE4usC7YyDvf21Pb+jIRA"
+ETag: W/"57-4qFA9ZIxB8XHg6ZVqzURPhA8qog"
 
 {
     "success": true,
     "name": "Антарианский бургер",
     "order": {
-        "number": 7545
+        "number": 9123
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderAuthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="3.092">
+  <testcase name="testCreateOrderAuthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="3.077">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -493,7 +493,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -511,7 +511,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -524,13 +524,13 @@ Body:
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:35 GMT
+Date: Tue, 22 Apr 2025 16:00:08 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 882
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"372-fmPTHnwJqAaBzc6R413iePkSUeg"
+ETag: W/"372-JGRiL06PadUnjOteNWDa83f0NcA"
 
 {
     "success": true,
@@ -552,30 +552,30 @@ ETag: W/"372-fmPTHnwJqAaBzc6R413iePkSUeg"
                 "__v": 0
             }
         ],
-        "_id": "67fb75399ed280001b5c0cb4",
+        "_id": "6807bd059ed280001b5d1b59",
         "owner": {
-            "name": "виталий.ершова",
-            "email": "тамара.панфилов@ya.ru",
-            "createdAt": "2025-04-13T08:26:30.757Z",
-            "updatedAt": "2025-04-13T08:26:30.757Z"
+            "name": "кира.сысоев",
+            "email": "варвара.третьякова@ya.ru",
+            "createdAt": "2025-04-22T16:00:03.596Z",
+            "updatedAt": "2025-04-22T16:00:03.596Z"
         },
         "status": "done",
         "name": "Антарианский бургер",
-        "createdAt": "2025-04-13T08:26:33.204Z",
-        "updatedAt": "2025-04-13T08:26:34.935Z",
-        "number": 211724,
+        "createdAt": "2025-04-22T16:00:05.946Z",
+        "updatedAt": "2025-04-22T16:00:07.694Z",
+        "number": 217865,
         "price": 88
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:35 GMT
+Date: Tue, 22 Apr 2025 16:00:08 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 882
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"372-fmPTHnwJqAaBzc6R413iePkSUeg"
+ETag: W/"372-JGRiL06PadUnjOteNWDa83f0NcA"
 
 {
     "success": true,
@@ -597,28 +597,28 @@ ETag: W/"372-fmPTHnwJqAaBzc6R413iePkSUeg"
                 "__v": 0
             }
         ],
-        "_id": "67fb75399ed280001b5c0cb4",
+        "_id": "6807bd059ed280001b5d1b59",
         "owner": {
-            "name": "виталий.ершова",
-            "email": "тамара.панфилов@ya.ru",
-            "createdAt": "2025-04-13T08:26:30.757Z",
-            "updatedAt": "2025-04-13T08:26:30.757Z"
+            "name": "кира.сысоев",
+            "email": "варвара.третьякова@ya.ru",
+            "createdAt": "2025-04-22T16:00:03.596Z",
+            "updatedAt": "2025-04-22T16:00:03.596Z"
         },
         "status": "done",
         "name": "Антарианский бургер",
-        "createdAt": "2025-04-13T08:26:33.204Z",
-        "updatedAt": "2025-04-13T08:26:34.935Z",
-        "number": 211724,
+        "createdAt": "2025-04-22T16:00:05.946Z",
+        "updatedAt": "2025-04-22T16:00:07.694Z",
+        "number": 217865,
         "price": 88
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderUnauthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.314">
+  <testcase name="testCreateOrderUnauthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.304">
     <failure message="unexpected exception type thrown; expected:&lt;kz.yandex.practicum.qa.sb.common.AuthorizationException&gt; but was:&lt;kz.yandex.practicum.qa.sb.common.ApiException&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
 	at org.junit.Assert.assertThrows(Assert.java:1020)
 	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:103)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -660,7 +660,7 @@ ETag: W/"372-fmPTHnwJqAaBzc6R413iePkSUeg"
 Caused by: kz.yandex.practicum.qa.sb.common.ApiException: Ingredient ids must be provided
 	at kz.yandex.practicum.qa.sb.common.ApiResponseValidator.validate(ApiResponseValidator.java:24)
 	at kz.yandex.practicum.qa.sb.order.OrderRestClient.createOrder(OrderRestClient.java:49)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:104)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:109)
 	at org.junit.Assert.assertThrows(Assert.java:1001)
 	... 40 more
 ]]></failure>
@@ -700,7 +700,7 @@ Body:
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 61
 Connection: keep-alive
@@ -714,7 +714,7 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 61
 Connection: keep-alive
@@ -728,7 +728,7 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderAuthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.315">
+  <testcase name="testCreateOrderAuthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.294">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -736,7 +736,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -754,7 +754,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -767,7 +767,7 @@ Body:
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 61
 Connection: keep-alive
@@ -781,7 +781,7 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 61
 Connection: keep-alive
@@ -795,11 +795,11 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderUnauthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.426">
+  <testcase name="testCreateOrderUnauthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.431">
     <failure message="unexpected exception type thrown; expected:&lt;kz.yandex.practicum.qa.sb.common.AuthorizationException&gt; but was:&lt;kz.yandex.practicum.qa.sb.common.ApiException&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
 	at org.junit.Assert.assertThrows(Assert.java:1020)
 	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:103)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -841,7 +841,7 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
 Caused by: kz.yandex.practicum.qa.sb.common.ApiException
 	at kz.yandex.practicum.qa.sb.common.ApiResponseValidator.validate(ApiResponseValidator.java:24)
 	at kz.yandex.practicum.qa.sb.order.OrderRestClient.createOrder(OrderRestClient.java:49)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:104)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:109)
 	at org.junit.Assert.assertThrows(Assert.java:1001)
 	... 40 more
 ]]></failure>
@@ -859,8 +859,8 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "2ac49fe5-04ae-4ff0-b205-9dc0ee6bdcb4",
-        "3c46683d-d827-4fb4-89b4-1f120b7dc348"
+        "d4a8050f-695a-4a2d-830c-fbb0d3031e1e",
+        "f8474da2-c9e3-475f-8191-ee3f4d7073c9"
     ]
 }
 Request method:	POST
@@ -877,13 +877,13 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "2ac49fe5-04ae-4ff0-b205-9dc0ee6bdcb4",
-        "3c46683d-d827-4fb4-89b4-1f120b7dc348"
+        "d4a8050f-695a-4a2d-830c-fbb0d3031e1e",
+        "f8474da2-c9e3-475f-8191-ee3f4d7073c9"
     ]
 }
 HTTP/1.1 500 Internal Server Error
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 148
 Connection: keep-alive
@@ -903,7 +903,7 @@ X-Content-Type-Options: nosniff
 </html>
 HTTP/1.1 500 Internal Server Error
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:36 GMT
+Date: Tue, 22 Apr 2025 16:00:09 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 148
 Connection: keep-alive
@@ -923,7 +923,7 @@ X-Content-Type-Options: nosniff
 </html>
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderAuthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.287">
+  <testcase name="testCreateOrderAuthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.275">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -931,7 +931,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -939,8 +939,8 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "2ac49fe5-04ae-4ff0-b205-9dc0ee6bdcb4",
-        "3c46683d-d827-4fb4-89b4-1f120b7dc348"
+        "d4a8050f-695a-4a2d-830c-fbb0d3031e1e",
+        "f8474da2-c9e3-475f-8191-ee3f4d7073c9"
     ]
 }
 Request method:	POST
@@ -950,7 +950,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTM2OWVkMjgwMDAxYjVjMGNiMSIsImlhdCI6MTc0NDUzMjc5MiwiZXhwIjoxNzQ0NTMzOTkyfQ.rm9pj1FJMBICM2LJHh_XspqX29IkcyQ-GC40JwZZ6h0
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDAzOWVkMjgwMDAxYjVkMWI1NiIsImlhdCI6MTc0NTMzNzYwNCwiZXhwIjoxNzQ1MzM4ODA0fQ.miQEDdhb7H7DMT2IkNa0BPCx3SNz9F33sSigAj5mtXU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -958,13 +958,13 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "2ac49fe5-04ae-4ff0-b205-9dc0ee6bdcb4",
-        "3c46683d-d827-4fb4-89b4-1f120b7dc348"
+        "d4a8050f-695a-4a2d-830c-fbb0d3031e1e",
+        "f8474da2-c9e3-475f-8191-ee3f4d7073c9"
     ]
 }
 HTTP/1.1 500 Internal Server Error
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:37 GMT
+Date: Tue, 22 Apr 2025 16:00:10 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 148
 Connection: keep-alive
@@ -984,7 +984,7 @@ X-Content-Type-Options: nosniff
 </html>
 HTTP/1.1 500 Internal Server Error
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:37 GMT
+Date: Tue, 22 Apr 2025 16:00:10 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 148
 Connection: keep-alive

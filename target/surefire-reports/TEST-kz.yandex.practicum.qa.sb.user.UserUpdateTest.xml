@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="6.986" tests="10" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="6.229" tests="10" errors="0" skipped="0" failures="4">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\wongs\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959\surefirebooter-20250413142625471_3.jar C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959 2025-04-13T14-26-25_137-jvmRun1 surefire-20250413142625471_1tmp surefire_0-20250413142625471_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729 2025-04-22T21-59-57_849-jvmRun1 surefire-20250422215958172_1tmp surefire_0-20250422215958172_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire8317579436091612959\surefirebooter-20250413142625471_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testUpdateUnauthorizedUserName" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="1.695">
+  <testcase name="testUpdateUnauthorizedUserName" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="1.526">
     <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -109,9 +109,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -126,49 +126,49 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:25 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 417
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
-ETag: W/"1a1-4tUh3ePtCN+RHkFbNPKttz3iTZU"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
+ETag: W/"195-7WipHEOp1jZK/QZkzwAzocUYlck"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4",
-    "refreshToken": "512cad881223ed48adac893d3ce419cc6c62214e6300eae4245b1bf065c3d3e3b892acde2fe5cab9"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ",
+    "refreshToken": "bdf6b4476ecc1643e3382ddbd7f10449ca244607d834d582da934f64be4312bca06453236dd692af"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:25 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 417
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
-ETag: W/"1a1-4tUh3ePtCN+RHkFbNPKttz3iTZU"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
+ETag: W/"195-7WipHEOp1jZK/QZkzwAzocUYlck"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4",
-    "refreshToken": "512cad881223ed48adac893d3ce419cc6c62214e6300eae4245b1bf065c3d3e3b892acde2fe5cab9"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ",
+    "refreshToken": "bdf6b4476ecc1643e3382ddbd7f10449ca244607d834d582da934f64be4312bca06453236dd692af"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
@@ -183,8 +183,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
     "name": null
 }
 Request method:	POST
@@ -200,46 +200,46 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
     "name": null
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:25 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 417
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"1a1-z9lXslqFcYyVQM0dBS19caqoYKE"
+ETag: W/"195-bISrNU+TmdDXhV59xH5V01fXHL4"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4",
-    "refreshToken": "2fcdf8a8b9f1d070f449c4ca45e174c0bf66415906a63eda45104a874c3664950a10570d1cc3feea",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ",
+    "refreshToken": "a36871b6d757dfd84ffb40e8f600af60038c2684f0c764b72f862cf962bd90ff646de9a6456dedb2",
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:25 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 417
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"1a1-z9lXslqFcYyVQM0dBS19caqoYKE"
+ETag: W/"195-bISrNU+TmdDXhV59xH5V01fXHL4"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4",
-    "refreshToken": "2fcdf8a8b9f1d070f449c4ca45e174c0bf66415906a63eda45104a874c3664950a10570d1cc3feea",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ",
+    "refreshToken": "a36871b6d757dfd84ffb40e8f600af60038c2684f0c764b72f862cf962bd90ff646de9a6456dedb2",
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     }
 }
 Request method:	POST
@@ -255,9 +255,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -272,52 +272,52 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:26 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 411
+Content-Length: 403
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
-ETag: W/"19b-t9qZCjTtzDjCSNnNOkZi5VQtyxc"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
+ETag: W/"193-z9r2bQ+/3BFf80c53OvEGPXl5cU"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g",
-    "refreshToken": "f40f52b920e6a5c504578419c60f9988e4d1e2f8567b9e1633eefde713c7cbf680598d4d5df6d518"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno",
+    "refreshToken": "9a9d910c464baa37be43fe96be30f66911d5e13f3a87da19592760155c6c04175957b0d90804ca9b"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:53 GMT
+Date: Tue, 22 Apr 2025 16:00:26 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 411
+Content-Length: 403
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
-ETag: W/"19b-t9qZCjTtzDjCSNnNOkZi5VQtyxc"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
+ETag: W/"193-z9r2bQ+/3BFf80c53OvEGPXl5cU"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g",
-    "refreshToken": "f40f52b920e6a5c504578419c60f9988e4d1e2f8567b9e1633eefde713c7cbf680598d4d5df6d518"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno",
+    "refreshToken": "9a9d910c464baa37be43fe96be30f66911d5e13f3a87da19592760155c6c04175957b0d90804ca9b"
 }
-Authorized user: User(email=герман.трофимова@hotmail.com, password=gcy62xsalc3xq, name=аркадий.герасимова, createdAt=null, updatedAt=null, accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4, refreshToken=2fcdf8a8b9f1d070f449c4ca45e174c0bf66415906a63eda45104a874c3664950a10570d1cc3feea)
-Unauthorized user: User(email=таисия.пестова@hotmail.com, password=tc23cjslf, name=анастасия.кабанов, createdAt=null, updatedAt=null, accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g, refreshToken=f40f52b920e6a5c504578419c60f9988e4d1e2f8567b9e1633eefde713c7cbf680598d4d5df6d518)
+Authorized user: User(email=виталии.антонов@hotmail.com, password=17l9005hoqbhfm0, name=артём.филатов, createdAt=null, updatedAt=null, accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ, refreshToken=a36871b6d757dfd84ffb40e8f600af60038c2684f0c764b72f862cf962bd90ff646de9a6456dedb2)
+Unauthorized user: User(email=федор.гусева@yahoo.com, password=aolzphrbturk, name=татьяна.сафонова, createdAt=null, updatedAt=null, accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno, refreshToken=9a9d910c464baa37be43fe96be30f66911d5e13f3a87da19592760155c6c04175957b0d90804ca9b)
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -325,16 +325,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов_updated"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова_updated"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -343,54 +343,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов_updated"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова_updated"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:54 GMT
+Date: Tue, 22 Apr 2025 16:00:26 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 126
+Content-Length: 118
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7e-s/6HJ/MdzLoaBbApuK+kHNRWSHI"
+ETag: W/"76-AL2bxqpOLU2T7QG1k5RX4kO3TyI"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов_updated"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова_updated"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:54 GMT
+Date: Tue, 22 Apr 2025 16:00:26 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 126
+Content-Length: 118
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7e-s/6HJ/MdzLoaBbApuK+kHNRWSHI"
+ETag: W/"76-AL2bxqpOLU2T7QG1k5RX4kO3TyI"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов_updated"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова_updated"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateAuthorizedUserPassword" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.498">
+  <testcase name="testUpdateAuthorizedUserPassword" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.397">
     <system-out><![CDATA[Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -398,16 +398,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq_updated",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0_updated",
+    "name": "артём.филатов"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -416,54 +416,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq_updated",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0_updated",
+    "name": "артём.филатов"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:54 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 124
+Content-Length: 112
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7c-IS4g0JAQ5cG0xcy6FpZl3/XYz0k"
+ETag: W/"70-StcddeoJ+vSXjnOfFt8VLJ32WFc"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:54 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 124
+Content-Length: 112
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7c-IS4g0JAQ5cG0xcy6FpZl3/XYz0k"
+ETag: W/"70-StcddeoJ+vSXjnOfFt8VLJ32WFc"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateUnauthorizedUserPassword" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.442">
+  <testcase name="testUpdateUnauthorizedUserPassword" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.389">
     <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -505,16 +505,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf_updated",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk_updated",
+    "name": "татьяна.сафонова"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -523,54 +523,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf_updated",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk_updated",
+    "name": "татьяна.сафонова"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:55 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 118
+Content-Length: 110
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"76-yFuOVDEbNP3BOyymQ7PBQROqNuo"
+ETag: W/"6e-oxZS/BF350SWD4NAZVAHX/QGgPs"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:55 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 118
+Content-Length: 110
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"76-yFuOVDEbNP3BOyymQ7PBQROqNuo"
+ETag: W/"6e-oxZS/BF350SWD4NAZVAHX/QGgPs"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com",
+        "name": "татьяна.сафонова"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateAuthorizedUserExistentEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.478">
+  <testcase name="testUpdateAuthorizedUserExistentEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.361">
     <failure message="expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -612,16 +612,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -630,54 +630,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:55 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 128
+Content-Length: 112
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"80-adVNs78A93n3lwWGvwIGN3Yp9tw"
+ETag: W/"70-1G22rBphJLKm394Smgvd3xn4e4Q"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com_updated",
-        "name": "аркадий.герасимова"
+        "email": "федор.гусева@yahoo.com_updated",
+        "name": "артём.филатов"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:55 GMT
+Date: Tue, 22 Apr 2025 16:00:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 128
+Content-Length: 112
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"80-adVNs78A93n3lwWGvwIGN3Yp9tw"
+ETag: W/"70-1G22rBphJLKm394Smgvd3xn4e4Q"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com_updated",
-        "name": "аркадий.герасимова"
+        "email": "федор.гусева@yahoo.com_updated",
+        "name": "артём.филатов"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateAuthorizedUserName" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.416">
+  <testcase name="testUpdateAuthorizedUserName" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.355">
     <system-out><![CDATA[Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -685,16 +685,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова_updated"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов_updated"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -703,119 +703,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова_updated"
+    "email": "виталии.антонов@hotmail.com",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов_updated"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 132
+Content-Length: 120
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"84-HUSw/yi7GntJZjDKnyHHg4fkHaA"
+ETag: W/"78-tZ3CY6/gT1H9192Bz6xX9SrVKmA"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова_updated"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов_updated"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 132
+Content-Length: 120
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"84-HUSw/yi7GntJZjDKnyHHg4fkHaA"
+ETag: W/"78-tZ3CY6/gT1H9192Bz6xX9SrVKmA"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com",
-        "name": "аркадий.герасимова_updated"
+        "email": "виталии.антонов@hotmail.com",
+        "name": "артём.филатов_updated"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateUserNameWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.304">
-    <system-out><![CDATA[Request method:	PATCH
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов_updated"
-}
-Request method:	PATCH
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов_updated"
-}
-HTTP/1.1 401 Unauthorized
-Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 54
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
-
-{
-    "success": false,
-    "message": "You should be authorised"
-}
-HTTP/1.1 401 Unauthorized
-Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 54
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
-
-{
-    "success": false,
-    "message": "You should be authorised"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="testUpdateUserEmailWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.293">
+  <testcase name="testUpdateUserNameWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.285">
     <system-out><![CDATA[Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -829,9 +764,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова_updated"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -846,13 +781,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова_updated"
 }
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -866,7 +801,7 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
 }
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:56 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -880,7 +815,7 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateUserPasswordWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.287">
+  <testcase name="testUpdateUserEmailWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.297">
     <system-out><![CDATA[Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -894,9 +829,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf_updated",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -911,13 +846,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com",
-    "password": "tc23cjslf_updated",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -931,7 +866,7 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
 }
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -945,7 +880,72 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateUnauthorizedUserEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.436">
+  <testcase name="testUpdateUserPasswordWithoutAuthorization" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.32">
+    <system-out><![CDATA[Request method:	PATCH
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk_updated",
+    "name": "татьяна.сафонова"
+}
+Request method:	PATCH
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "федор.гусева@yahoo.com",
+    "password": "aolzphrbturk_updated",
+    "name": "татьяна.сафонова"
+}
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.18.0 (Ubuntu)
+Date: Tue, 22 Apr 2025 16:00:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
+
+{
+    "success": false,
+    "message": "You should be authorised"
+}
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.18.0 (Ubuntu)
+Date: Tue, 22 Apr 2025 16:00:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
+
+{
+    "success": false,
+    "message": "You should be authorised"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateUnauthorizedUserEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.352">
     <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -987,16 +987,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -1005,54 +1005,54 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjNCIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.kj-x1FAg2HzZZjfffDBXwAlX7Wro0EM3uzSo6h5tp9g
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDFhOWVkMjgwMDAxYjVkMWI2OSIsImlhdCI6MTc0NTMzNzYyNiwiZXhwIjoxNzQ1MzM4ODI2fQ.y6xDgj_UyqWIuVSRYUQu7RbEyOzmIj3f_7YZbY8ZXno
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "таисия.пестова@hotmail.com_updated",
-    "password": "tc23cjslf",
-    "name": "анастасия.кабанов"
+    "email": "федор.гусева@yahoo.com_updated",
+    "password": "aolzphrbturk",
+    "name": "татьяна.сафонова"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 126
+Content-Length: 118
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7e-J0GPKQTr/n60FRIvi5ZaGf+8C9g"
+ETag: W/"76-IxFfpxpEgJWNquuGZ6ZVQfDtzgc"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com_updated",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com_updated",
+        "name": "татьяна.сафонова"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 126
+Content-Length: 118
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"7e-J0GPKQTr/n60FRIvi5ZaGf+8C9g"
+ETag: W/"76-IxFfpxpEgJWNquuGZ6ZVQfDtzgc"
 
 {
     "success": true,
     "user": {
-        "email": "таисия.пестова@hotmail.com_updated",
-        "name": "анастасия.кабанов"
+        "email": "федор.гусева@yahoo.com_updated",
+        "name": "татьяна.сафонова"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateAuthorizedUserEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.513">
+  <testcase name="testUpdateAuthorizedUserEmail" classname="kz.yandex.practicum.qa.sb.user.UserUpdateTest" time="0.352">
     <system-out><![CDATA[Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
@@ -1060,16 +1060,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com_updated",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com_updated",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 Request method:	PATCH
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -1078,49 +1078,49 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZmI3NTRkOWVkMjgwMDAxYjVjMGNjMSIsImlhdCI6MTc0NDUzMjgxMywiZXhwIjoxNzQ0NTM0MDEzfQ.5F6YcQ4rBiTjFdQL0kaiiXGGt6zOp9TX7WaFJXvl3R4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDE5OWVkMjgwMDAxYjVkMWI2NiIsImlhdCI6MTc0NTMzNzYyNSwiZXhwIjoxNzQ1MzM4ODI1fQ.3IB7bs9lSPVLc3lTTHcD3Pz1Du6mIIYhk94m8ZoaNhQ
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "герман.трофимова@hotmail.com_updated",
-    "password": "gcy62xsalc3xq",
-    "name": "аркадий.герасимова"
+    "email": "виталии.антонов@hotmail.com_updated",
+    "password": "17l9005hoqbhfm0",
+    "name": "артём.филатов"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 132
+Content-Length: 120
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"84-495S8DSxY9F+napgJ9MJXMcoNsA"
+ETag: W/"78-+Xnm6qSEwZSZWy7kI95f3tib6zY"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com_updated",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com_updated",
+        "name": "артём.филатов"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Sun, 13 Apr 2025 08:26:57 GMT
+Date: Tue, 22 Apr 2025 16:00:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 132
+Content-Length: 120
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"84-495S8DSxY9F+napgJ9MJXMcoNsA"
+ETag: W/"78-+Xnm6qSEwZSZWy7kI95f3tib6zY"
 
 {
     "success": true,
     "user": {
-        "email": "герман.трофимова@hotmail.com_updated",
-        "name": "аркадий.герасимова"
+        "email": "виталии.антонов@hotmail.com_updated",
+        "name": "артём.филатов"
     }
 }
 ]]></system-out>

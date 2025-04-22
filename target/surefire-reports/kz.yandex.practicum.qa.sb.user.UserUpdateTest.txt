@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: kz.yandex.practicum.qa.sb.user.UserUpdateTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.986 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.user.UserUpdateTest
-kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserName -- Time elapsed: 1.695 s <<< FAILURE!
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 6.229 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.user.UserUpdateTest
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserName -- Time elapsed: 1.526 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -37,7 +37,7 @@ java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.Authorizatio
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserPassword -- Time elapsed: 0.442 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserPassword -- Time elapsed: 0.389 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -72,7 +72,7 @@ java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.Authorizatio
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateAuthorizedUserExistentEmail -- Time elapsed: 0.478 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateAuthorizedUserExistentEmail -- Time elapsed: 0.361 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -107,7 +107,7 @@ java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.ApiException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserEmail -- Time elapsed: 0.436 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserEmail -- Time elapsed: 0.352 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)

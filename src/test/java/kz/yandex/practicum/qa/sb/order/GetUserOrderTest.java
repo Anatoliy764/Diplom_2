@@ -1,5 +1,7 @@
 package kz.yandex.practicum.qa.sb.order;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.AuthorizationException;
 import kz.yandex.practicum.qa.sb.ingredient.IngredientRestClient;
@@ -69,6 +71,7 @@ public class GetUserOrderTest {
     }
 
     @Test
+    @DisplayName("Получение заказов конкретного авторизованного пользователя")
     public void testGetOrdersOfAuthorizedUser() {
         try {
             GetUserOrdersResponse userOrdersResponse = AUTHORIZED_ORDER_REST_CLIENT.getUserOrders();
@@ -99,6 +102,7 @@ public class GetUserOrderTest {
     }
 
     @Test
+    @DisplayName("Получение заказов конкретного неавторизованного пользователя")
     public void testGetOrdersOfUnauthorizedUser() {
         AuthorizationException authorizationException = assertThrows(AuthorizationException.class, () -> {
             OrderRestClient.getUserOrders(USER_UNAUTHORIZED.getAccessToken());
@@ -107,6 +111,8 @@ public class GetUserOrderTest {
     }
 
     @Test
+    @DisplayName("Получение заказов конкретного неавторизованного пользователя")
+    @Description("без указания заголовка запроса \"Authorization\"")
     public void testGetOrdersWithoutAuthorizationHeader() {
         AuthorizationException authorizationException = assertThrows(AuthorizationException.class, () -> {
             OrderRestClient.getUserOrders("");
