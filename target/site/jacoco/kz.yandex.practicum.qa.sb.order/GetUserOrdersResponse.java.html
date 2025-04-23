@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GetUserOrdersResponse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Diplom_2</a> &gt; <a href="index.source.html" class="el_package">kz.yandex.practicum.qa.sb.order</a> &gt; <span class="el_source">GetUserOrdersResponse.java</span></div><h1>GetUserOrdersResponse.java</h1><pre class="source lang-java linenums">package kz.yandex.practicum.qa.sb.order;
+
+import kz.yandex.practicum.qa.sb.common.CommonApiResponse;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+import lombok.experimental.FieldDefaults;
+
+import java.util.LinkedList;
+import java.util.List;
+
+<span class="nc bnc" id="L14" title="All 20 branches missed.">@EqualsAndHashCode(callSuper = true)</span>
+<span class="pc" id="L15">@Data</span>
+@Accessors(chain = true)
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class GetUserOrdersResponse extends CommonApiResponse {
+
+<span class="nc" id="L20">    List&lt;Order&gt; orders;</span>
+
+<span class="fc" id="L22">    int total;</span>
+
+<span class="nc" id="L24">    int totalToday;</span>
+
+<span class="fc" id="L26">    public GetUserOrdersResponse() {</span>
+<span class="fc" id="L27">        orders = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L28">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: kz.yandex.practicum.qa.sb.order.CreateOrderTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 11.08 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.order.CreateOrderTest
-kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[0] -- Time elapsed: 0.351 s <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 10.79 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.order.CreateOrderTest
+kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[0] -- Time elapsed: 0.358 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -46,7 +46,7 @@ java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.Authorizatio
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[1] -- Time elapsed: 0.304 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[1] -- Time elapsed: 0.298 s <<< FAILURE!
 java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
 	at org.junit.Assert.assertThrows(Assert.java:1020)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -96,7 +96,7 @@ Caused by: kz.yandex.practicum.qa.sb.common.ApiException: Ingredient ids must be
 	at org.junit.Assert.assertThrows(Assert.java:1001)
 	... 40 more
 
-kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[2] -- Time elapsed: 0.431 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized[2] -- Time elapsed: 0.413 s <<< FAILURE!
 java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
 	at org.junit.Assert.assertThrows(Assert.java:1020)
 	at org.junit.Assert.assertThrows(Assert.java:981)

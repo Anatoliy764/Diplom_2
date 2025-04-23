@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: kz.yandex.practicum.qa.sb.order.GetUserOrderTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.61 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.order.GetUserOrderTest
-kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser -- Time elapsed: 8.044 s <<< FAILURE!
-java.lang.AssertionError: total count of orders in response does not match with actual orders count expected:<2> but was:<217867>
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.58 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.order.GetUserOrderTest
+kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser -- Time elapsed: 7.955 s <<< FAILURE!
+java.lang.AssertionError: total count of orders in response does not match with actual orders count expected:<2> but was:<218415>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
@@ -38,7 +38,7 @@ java.lang.AssertionError: total count of orders in response does not match with 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser -- Time elapsed: 0.712 s <<< FAILURE!
+kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser -- Time elapsed: 0.791 s <<< FAILURE!
 java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)

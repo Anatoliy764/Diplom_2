@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="10.614" tests="3" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="10.58" tests="3" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\wongs\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729 2025-04-22T21-59-57_849-jvmRun1 surefire-20250422215958172_1tmp surefire_0-20250422215958172_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259 2025-04-23T19-10-57_117-jvmRun1 surefire-20250423191057471_1tmp surefire_0-20250423191057471_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire1996412902925432729\surefirebooter-20250422215958172_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -61,8 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetOrdersOfAuthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="8.044">
-    <failure message="total count of orders in response does not match with actual orders count expected:&lt;2&gt; but was:&lt;217867&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: total count of orders in response does not match with actual orders count expected:<2> but was:<217867>
+  <testcase name="testGetOrdersOfAuthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="7.955">
+    <failure message="total count of orders in response does not match with actual orders count expected:&lt;2&gt; but was:&lt;218415&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: total count of orders in response does not match with actual orders count expected:<2> but was:<218415>
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
@@ -110,9 +110,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "василиса.носов@mail.ru",
-    "password": "kqkslwm9",
-    "name": "ольга.ильин"
+    "email": "валерия.королев@ya.ru",
+    "password": "d7obeytda0b3h",
+    "name": "роман.селиверстова"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -127,49 +127,49 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "василиса.носов@mail.ru",
-    "password": "kqkslwm9",
-    "name": "ольга.ильин"
+    "email": "валерия.королев@ya.ru",
+    "password": "d7obeytda0b3h",
+    "name": "роман.селиверстова"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:11 GMT
+Date: Wed, 23 Apr 2025 13:11:09 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 395
+Content-Length: 409
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
-ETag: W/"18b-4SmWx+SjvsTqSipH5kgLXhdFfaQ"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw
+ETag: W/"199-9MpSHCApb56DWHwQeJ/mbVvxw4Q"
 
 {
     "success": true,
     "user": {
-        "email": "василиса.носов@mail.ru",
-        "name": "ольга.ильин"
+        "email": "валерия.королев@ya.ru",
+        "name": "роман.селиверстова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw",
-    "refreshToken": "ad3dd495337b1e04becc07fb433844721075664e782e03615a7edeeab89176c0184927f0903b00fd"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw",
+    "refreshToken": "561d2355e961db468a17e750ebc31b4ff2bc52b640d963d4a53c7f9096957a4887971461a1edafe2"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:11 GMT
+Date: Wed, 23 Apr 2025 13:11:09 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 395
+Content-Length: 409
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
-ETag: W/"18b-4SmWx+SjvsTqSipH5kgLXhdFfaQ"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw
+ETag: W/"199-9MpSHCApb56DWHwQeJ/mbVvxw4Q"
 
 {
     "success": true,
     "user": {
-        "email": "василиса.носов@mail.ru",
-        "name": "ольга.ильин"
+        "email": "валерия.королев@ya.ru",
+        "name": "роман.селиверстова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw",
-    "refreshToken": "ad3dd495337b1e04becc07fb433844721075664e782e03615a7edeeab89176c0184927f0903b00fd"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw",
+    "refreshToken": "561d2355e961db468a17e750ebc31b4ff2bc52b640d963d4a53c7f9096957a4887971461a1edafe2"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
@@ -184,8 +184,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "василиса.носов@mail.ru",
-    "password": "kqkslwm9",
+    "email": "валерия.королев@ya.ru",
+    "password": "d7obeytda0b3h",
     "name": null
 }
 Request method:	POST
@@ -201,46 +201,46 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "василиса.носов@mail.ru",
-    "password": "kqkslwm9",
+    "email": "валерия.королев@ya.ru",
+    "password": "d7obeytda0b3h",
     "name": null
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:11 GMT
+Date: Wed, 23 Apr 2025 13:11:10 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 395
+Content-Length: 409
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"18b-zKbid/Ex3NebOWj7hD6LvnnkDMQ"
+ETag: W/"199-3DY6b1egzvtPVGebyGF8OORtea4"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw",
-    "refreshToken": "a56def04df5a8c5f686663f6947d05af4eb2006160d62c3eb896a341a013a4dc72c791e8a3d1fd73",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU",
+    "refreshToken": "3d492aa01c4bdf70194244d73a13cea7a1fb5f9ad8253fa25b937ee542900c8960b55a25f09a6f26",
     "user": {
-        "email": "василиса.носов@mail.ru",
-        "name": "ольга.ильин"
+        "email": "валерия.королев@ya.ru",
+        "name": "роман.селиверстова"
     }
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:11 GMT
+Date: Wed, 23 Apr 2025 13:11:10 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 395
+Content-Length: 409
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"18b-zKbid/Ex3NebOWj7hD6LvnnkDMQ"
+ETag: W/"199-3DY6b1egzvtPVGebyGF8OORtea4"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw",
-    "refreshToken": "a56def04df5a8c5f686663f6947d05af4eb2006160d62c3eb896a341a013a4dc72c791e8a3d1fd73",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU",
+    "refreshToken": "3d492aa01c4bdf70194244d73a13cea7a1fb5f9ad8253fa25b937ee542900c8960b55a25f09a6f26",
     "user": {
-        "email": "василиса.носов@mail.ru",
-        "name": "ольга.ильин"
+        "email": "валерия.королев@ya.ru",
+        "name": "роман.селиверстова"
     }
 }
 Request method:	POST
@@ -250,7 +250,133 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa78"
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa78"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 23 Apr 2025 13:11:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 891
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"37b-0QbYdRucA6UyqnO/v/k1NrM+w2M"
+
+{
+    "success": true,
+    "name": "Альфа-сахаридный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
+                "type": "main",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "6808e6ee9ed280001b5d305e",
+        "owner": {
+            "name": "роман.селиверстова",
+            "email": "валерия.королев@ya.ru",
+            "createdAt": "2025-04-23T13:11:09.594Z",
+            "updatedAt": "2025-04-23T13:11:09.594Z"
+        },
+        "status": "done",
+        "name": "Альфа-сахаридный бургер",
+        "createdAt": "2025-04-23T13:11:10.308Z",
+        "updatedAt": "2025-04-23T13:11:12.029Z",
+        "number": 218414,
+        "price": 762
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 23 Apr 2025 13:11:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 891
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"37b-0QbYdRucA6UyqnO/v/k1NrM+w2M"
+
+{
+    "success": true,
+    "name": "Альфа-сахаридный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
+                "type": "main",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "6808e6ee9ed280001b5d305e",
+        "owner": {
+            "name": "роман.селиверстова",
+            "email": "валерия.королев@ya.ru",
+            "createdAt": "2025-04-23T13:11:09.594Z",
+            "updatedAt": "2025-04-23T13:11:09.594Z"
+        },
+        "status": "done",
+        "name": "Альфа-сахаридный бургер",
+        "createdAt": "2025-04-23T13:11:10.308Z",
+        "updatedAt": "2025-04-23T13:11:12.029Z",
+        "number": 218414,
+        "price": 762
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -259,8 +385,8 @@ Body:
 {
     "ingredients": [
         "61c0c5a71d1f82001bdaaa73",
-        "61c0c5a71d1f82001bdaaa70",
-        "61c0c5a71d1f82001bdaaa73"
+        "61c0c5a71d1f82001bdaaa78",
+        "61c0c5a71d1f82001bdaaa78"
     ]
 }
 Request method:	POST
@@ -270,7 +396,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -279,23 +405,23 @@ Body:
 {
     "ingredients": [
         "61c0c5a71d1f82001bdaaa73",
-        "61c0c5a71d1f82001bdaaa70",
-        "61c0c5a71d1f82001bdaaa73"
+        "61c0c5a71d1f82001bdaaa78",
+        "61c0c5a71d1f82001bdaaa78"
     ]
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:14 GMT
+Date: Wed, 23 Apr 2025 13:11:16 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 1628
+Content-Length: 1694
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"65c-Yy2HCPhuYXpXlBlIavnTqCLPbdw"
+ETag: W/"69e-I69q95hTbejC5jroLhQOF0yOW7E"
 
 {
     "success": true,
-    "name": "Space метеоритный бургер",
+    "name": "Альфа-сахаридный space бургер",
     "order": {
         "ingredients": [
             {
@@ -313,92 +439,64 @@ ETag: W/"65c-Yy2HCPhuYXpXlBlIavnTqCLPbdw"
                 "__v": 0
             },
             {
-                "_id": "61c0c5a71d1f82001bdaaa70",
-                "name": "Говяжий метеорит (отбивная)",
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
                 "type": "main",
-                "proteins": 800,
-                "fat": 800,
-                "carbohydrates": 300,
-                "calories": 2674,
-                "price": 3000,
-                "image": "https://code.s3.yandex.net/react/code/meat-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
                 "__v": 0
             },
             {
-                "_id": "61c0c5a71d1f82001bdaaa73",
-                "name": "Соус фирменный Space Sauce",
-                "type": "sauce",
-                "proteins": 50,
-                "fat": 22,
-                "carbohydrates": 11,
-                "calories": 14,
-                "price": 80,
-                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6807bd0b9ed280001b5d1b5d",
-        "owner": {
-            "name": "ольга.ильин",
-            "email": "василиса.носов@mail.ru",
-            "createdAt": "2025-04-22T16:00:11.217Z",
-            "updatedAt": "2025-04-22T16:00:11.217Z"
-        },
-        "status": "done",
-        "name": "Space метеоритный бургер",
-        "createdAt": "2025-04-22T16:00:11.930Z",
-        "updatedAt": "2025-04-22T16:00:13.921Z",
-        "number": 217866,
-        "price": 3160
-    }
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:14 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 1628
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"65c-Yy2HCPhuYXpXlBlIavnTqCLPbdw"
-
-{
-    "success": true,
-    "name": "Space метеоритный бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa73",
-                "name": "Соус фирменный Space Sauce",
-                "type": "sauce",
-                "proteins": 50,
-                "fat": 22,
-                "carbohydrates": 11,
-                "calories": 14,
-                "price": 80,
-                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa70",
-                "name": "Говяжий метеорит (отбивная)",
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
                 "type": "main",
-                "proteins": 800,
-                "fat": 800,
-                "carbohydrates": 300,
-                "calories": 2674,
-                "price": 3000,
-                "image": "https://code.s3.yandex.net/react/code/meat-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
                 "__v": 0
-            },
+            }
+        ],
+        "_id": "6808e6f19ed280001b5d3061",
+        "owner": {
+            "name": "роман.селиверстова",
+            "email": "валерия.королев@ya.ru",
+            "createdAt": "2025-04-23T13:11:09.594Z",
+            "updatedAt": "2025-04-23T13:11:09.594Z"
+        },
+        "status": "done",
+        "name": "Альфа-сахаридный space бургер",
+        "createdAt": "2025-04-23T13:11:13.344Z",
+        "updatedAt": "2025-04-23T13:11:15.139Z",
+        "number": 218415,
+        "price": 1604
+    }
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 23 Apr 2025 13:11:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1694
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"69e-I69q95hTbejC5jroLhQOF0yOW7E"
+
+{
+    "success": true,
+    "name": "Альфа-сахаридный space бургер",
+    "order": {
+        "ingredients": [
             {
                 "_id": "61c0c5a71d1f82001bdaaa73",
                 "name": "Соус фирменный Space Sauce",
@@ -412,177 +510,49 @@ ETag: W/"65c-Yy2HCPhuYXpXlBlIavnTqCLPbdw"
                 "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
                 "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
                 "__v": 0
-            }
-        ],
-        "_id": "6807bd0b9ed280001b5d1b5d",
-        "owner": {
-            "name": "ольга.ильин",
-            "email": "василиса.носов@mail.ru",
-            "createdAt": "2025-04-22T16:00:11.217Z",
-            "updatedAt": "2025-04-22T16:00:11.217Z"
-        },
-        "status": "done",
-        "name": "Space метеоритный бургер",
-        "createdAt": "2025-04-22T16:00:11.930Z",
-        "updatedAt": "2025-04-22T16:00:13.921Z",
-        "number": 217866,
-        "price": 3160
-    }
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa74",
-        "61c0c5a71d1f82001bdaaa6c"
-    ]
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa74",
-        "61c0c5a71d1f82001bdaaa6c"
-    ]
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:17 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 1328
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"530-lxqVB4lebGZB/4lcsddTousKZew"
-
-{
-    "success": true,
-    "name": "Традиционный-галактический краторный бургер",
-    "order": {
-        "ingredients": [
+            },
             {
-                "_id": "61c0c5a71d1f82001bdaaa74",
-                "name": "Соус традиционный галактический",
-                "type": "sauce",
-                "proteins": 42,
-                "fat": 24,
-                "carbohydrates": 42,
-                "calories": 99,
-                "price": 15,
-                "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
+                "type": "main",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
                 "__v": 0
             },
             {
-                "_id": "61c0c5a71d1f82001bdaaa6c",
-                "name": "Краторная булка N-200i",
-                "type": "bun",
-                "proteins": 80,
-                "fat": 24,
-                "carbohydrates": 53,
-                "calories": 420,
-                "price": 1255,
-                "image": "https://code.s3.yandex.net/react/code/bun-02.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+                "_id": "61c0c5a71d1f82001bdaaa78",
+                "name": "Кристаллы марсианских альфа-сахаридов",
+                "type": "main",
+                "proteins": 234,
+                "fat": 432,
+                "carbohydrates": 111,
+                "calories": 189,
+                "price": 762,
+                "image": "https://code.s3.yandex.net/react/code/core.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
                 "__v": 0
             }
         ],
-        "_id": "6807bd0f9ed280001b5d1b5e",
+        "_id": "6808e6f19ed280001b5d3061",
         "owner": {
-            "name": "ольга.ильин",
-            "email": "василиса.носов@mail.ru",
-            "createdAt": "2025-04-22T16:00:11.217Z",
-            "updatedAt": "2025-04-22T16:00:11.217Z"
+            "name": "роман.селиверстова",
+            "email": "валерия.королев@ya.ru",
+            "createdAt": "2025-04-23T13:11:09.594Z",
+            "updatedAt": "2025-04-23T13:11:09.594Z"
         },
         "status": "done",
-        "name": "Традиционный-галактический краторный бургер",
-        "createdAt": "2025-04-22T16:00:15.179Z",
-        "updatedAt": "2025-04-22T16:00:16.866Z",
-        "number": 217867,
-        "price": 1270
-    }
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:17 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 1328
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"530-lxqVB4lebGZB/4lcsddTousKZew"
-
-{
-    "success": true,
-    "name": "Традиционный-галактический краторный бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa74",
-                "name": "Соус традиционный галактический",
-                "type": "sauce",
-                "proteins": 42,
-                "fat": 24,
-                "carbohydrates": 42,
-                "calories": 99,
-                "price": 15,
-                "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa6c",
-                "name": "Краторная булка N-200i",
-                "type": "bun",
-                "proteins": 80,
-                "fat": 24,
-                "carbohydrates": 53,
-                "calories": 420,
-                "price": 1255,
-                "image": "https://code.s3.yandex.net/react/code/bun-02.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6807bd0f9ed280001b5d1b5e",
-        "owner": {
-            "name": "ольга.ильин",
-            "email": "василиса.носов@mail.ru",
-            "createdAt": "2025-04-22T16:00:11.217Z",
-            "updatedAt": "2025-04-22T16:00:11.217Z"
-        },
-        "status": "done",
-        "name": "Традиционный-галактический краторный бургер",
-        "createdAt": "2025-04-22T16:00:15.179Z",
-        "updatedAt": "2025-04-22T16:00:16.866Z",
-        "number": 217867,
-        "price": 1270
+        "name": "Альфа-сахаридный space бургер",
+        "createdAt": "2025-04-23T13:11:13.344Z",
+        "updatedAt": "2025-04-23T13:11:15.139Z",
+        "number": 218415,
+        "price": 1604
     }
 }
 Request method:	POST
@@ -598,9 +568,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "тамара.шарапова@yandex.ru",
-    "password": "hff2tvk6m4j49",
-    "name": "валерий.быкова"
+    "email": "римма.герасимова@mail.ru",
+    "password": "agvjlcbn96w6vc",
+    "name": "наталья.власова"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -615,49 +585,49 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "тамара.шарапова@yandex.ru",
-    "password": "hff2tvk6m4j49",
-    "name": "валерий.быкова"
+    "email": "римма.герасимова@mail.ru",
+    "password": "agvjlcbn96w6vc",
+    "name": "наталья.власова"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:18 GMT
+Date: Wed, 23 Apr 2025 13:11:16 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 405
+Content-Length: 407
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4
-ETag: W/"195-+VzDmJo9TcBqUnmqN1Nlgd06jEo"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
+ETag: W/"197-96kEKT0AFYCIGDjDT5ci+DZZ6kA"
 
 {
     "success": true,
     "user": {
-        "email": "тамара.шарапова@yandex.ru",
-        "name": "валерий.быкова"
+        "email": "римма.герасимова@mail.ru",
+        "name": "наталья.власова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4",
-    "refreshToken": "ef23d96a06037e680592c87828ed724d3b77b3c3d1c633f6d83cb2c04ea9656ccd22b53f262d33ec"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M",
+    "refreshToken": "3d38c14f0fe959210147fb3e0bcf2c4e5cb2c3c72d8c76a8701fc5c2e2962b10fdb21287a3275a0d"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:18 GMT
+Date: Wed, 23 Apr 2025 13:11:16 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 405
+Content-Length: 407
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4
-ETag: W/"195-+VzDmJo9TcBqUnmqN1Nlgd06jEo"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
+ETag: W/"197-96kEKT0AFYCIGDjDT5ci+DZZ6kA"
 
 {
     "success": true,
     "user": {
-        "email": "тамара.шарапова@yandex.ru",
-        "name": "валерий.быкова"
+        "email": "римма.герасимова@mail.ru",
+        "name": "наталья.власова"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4",
-    "refreshToken": "ef23d96a06037e680592c87828ed724d3b77b3c3d1c633f6d83cb2c04ea9656ccd22b53f262d33ec"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M",
+    "refreshToken": "3d38c14f0fe959210147fb3e0bcf2c4e5cb2c3c72d8c76a8701fc5c2e2962b10fdb21287a3275a0d"
 }
 Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
@@ -666,7 +636,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -679,7 +649,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDBiOWVkMjgwMDAxYjVkMWI1YSIsImlhdCI6MTc0NTMzNzYxMSwiZXhwIjoxNzQ1MzM4ODExfQ.yDj35dteEqixWi7ibr269TpyjNicek-Y4krZJU-iUfw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -687,91 +657,89 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:18 GMT
+Date: Wed, 23 Apr 2025 13:11:17 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 660
+Content-Length: 603
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"294-Esq1V1pORo1UOlYoOlemSOz8xIE"
+ETag: W/"25b-523ghL0MUxD8OzZTqZtMRDaZcF8"
 
 {
     "success": true,
     "orders": [
         {
-            "_id": "6807bd0b9ed280001b5d1b5d",
+            "_id": "6808e6ee9ed280001b5d305e",
             "ingredients": [
-                "61c0c5a71d1f82001bdaaa73",
-                "61c0c5a71d1f82001bdaaa70",
-                "61c0c5a71d1f82001bdaaa73"
+                "61c0c5a71d1f82001bdaaa78"
             ],
             "status": "done",
-            "name": "Space метеоритный бургер",
-            "createdAt": "2025-04-22T16:00:11.930Z",
-            "updatedAt": "2025-04-22T16:00:13.921Z",
-            "number": 217866
+            "name": "Альфа-сахаридный бургер",
+            "createdAt": "2025-04-23T13:11:10.308Z",
+            "updatedAt": "2025-04-23T13:11:12.029Z",
+            "number": 218414
         },
         {
-            "_id": "6807bd0f9ed280001b5d1b5e",
+            "_id": "6808e6f19ed280001b5d3061",
             "ingredients": [
-                "61c0c5a71d1f82001bdaaa74",
-                "61c0c5a71d1f82001bdaaa6c"
+                "61c0c5a71d1f82001bdaaa73",
+                "61c0c5a71d1f82001bdaaa78",
+                "61c0c5a71d1f82001bdaaa78"
             ],
             "status": "done",
-            "name": "Традиционный-галактический краторный бургер",
-            "createdAt": "2025-04-22T16:00:15.179Z",
-            "updatedAt": "2025-04-22T16:00:16.866Z",
-            "number": 217867
+            "name": "Альфа-сахаридный space бургер",
+            "createdAt": "2025-04-23T13:11:13.344Z",
+            "updatedAt": "2025-04-23T13:11:15.139Z",
+            "number": 218415
         }
     ],
-    "total": 217867,
-    "totalToday": 446
+    "total": 218415,
+    "totalToday": 579
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:18 GMT
+Date: Wed, 23 Apr 2025 13:11:17 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 660
+Content-Length: 603
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"294-Esq1V1pORo1UOlYoOlemSOz8xIE"
+ETag: W/"25b-523ghL0MUxD8OzZTqZtMRDaZcF8"
 
 {
     "success": true,
     "orders": [
         {
-            "_id": "6807bd0b9ed280001b5d1b5d",
+            "_id": "6808e6ee9ed280001b5d305e",
             "ingredients": [
-                "61c0c5a71d1f82001bdaaa73",
-                "61c0c5a71d1f82001bdaaa70",
-                "61c0c5a71d1f82001bdaaa73"
+                "61c0c5a71d1f82001bdaaa78"
             ],
             "status": "done",
-            "name": "Space метеоритный бургер",
-            "createdAt": "2025-04-22T16:00:11.930Z",
-            "updatedAt": "2025-04-22T16:00:13.921Z",
-            "number": 217866
+            "name": "Альфа-сахаридный бургер",
+            "createdAt": "2025-04-23T13:11:10.308Z",
+            "updatedAt": "2025-04-23T13:11:12.029Z",
+            "number": 218414
         },
         {
-            "_id": "6807bd0f9ed280001b5d1b5e",
+            "_id": "6808e6f19ed280001b5d3061",
             "ingredients": [
-                "61c0c5a71d1f82001bdaaa74",
-                "61c0c5a71d1f82001bdaaa6c"
+                "61c0c5a71d1f82001bdaaa73",
+                "61c0c5a71d1f82001bdaaa78",
+                "61c0c5a71d1f82001bdaaa78"
             ],
             "status": "done",
-            "name": "Традиционный-галактический краторный бургер",
-            "createdAt": "2025-04-22T16:00:15.179Z",
-            "updatedAt": "2025-04-22T16:00:16.866Z",
-            "number": 217867
+            "name": "Альфа-сахаридный space бургер",
+            "createdAt": "2025-04-23T13:11:13.344Z",
+            "updatedAt": "2025-04-23T13:11:15.139Z",
+            "number": 218415
         }
     ],
-    "total": 217867,
-    "totalToday": 446
+    "total": 218415,
+    "totalToday": 579
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGetOrdersOfUnauthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.712">
+  <testcase name="testGetOrdersOfUnauthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.791">
     <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
 	at org.junit.Assert.assertThrows(Assert.java:1028)
 	at org.junit.Assert.assertThrows(Assert.java:981)
@@ -813,7 +781,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -826,7 +794,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDdiZDEyOWVkMjgwMDAxYjVkMWI1ZiIsImlhdCI6MTc0NTMzNzYxOCwiZXhwIjoxNzQ1MzM4ODE4fQ.JY8K790WL8XA1kM5Pa8wPCYKncekZrT7d5tXFuEWyq4
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -834,43 +802,43 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:19 GMT
+Date: Wed, 23 Apr 2025 13:11:18 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 60
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3c-nq1bbHmXkkJ0HmlBLKy5L4bjDNY"
+ETag: W/"3c-+JIQ3Mappth3mlzWS12W9DCmEoo"
 
 {
     "success": true,
     "orders": [
         
     ],
-    "total": 217867,
-    "totalToday": 446
+    "total": 218415,
+    "totalToday": 579
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:19 GMT
+Date: Wed, 23 Apr 2025 13:11:18 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 60
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3c-nq1bbHmXkkJ0HmlBLKy5L4bjDNY"
+ETag: W/"3c-+JIQ3Mappth3mlzWS12W9DCmEoo"
 
 {
     "success": true,
     "orders": [
         
     ],
-    "total": 217867,
-    "totalToday": 446
+    "total": 218415,
+    "totalToday": 579
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGetOrdersWithoutAuthorizationHeader" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.286">
+  <testcase name="testGetOrdersWithoutAuthorizationHeader" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.265">
     <system-out><![CDATA[Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -897,7 +865,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:19 GMT
+Date: Wed, 23 Apr 2025 13:11:18 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -911,7 +879,7 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
 }
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Tue, 22 Apr 2025 16:00:19 GMT
+Date: Wed, 23 Apr 2025 13:11:18 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive

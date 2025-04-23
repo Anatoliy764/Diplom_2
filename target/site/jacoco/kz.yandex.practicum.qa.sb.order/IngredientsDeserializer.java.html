@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IngredientsDeserializer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Diplom_2</a> &gt; <a href="index.source.html" class="el_package">kz.yandex.practicum.qa.sb.order</a> &gt; <span class="el_source">IngredientsDeserializer.java</span></div><h1>IngredientsDeserializer.java</h1><pre class="source lang-java linenums">package kz.yandex.practicum.qa.sb.order;
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import kz.yandex.practicum.qa.sb.ingredient.Ingredient;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L15">public class IngredientsDeserializer extends JsonDeserializer&lt;List&lt;Ingredient&gt;&gt; {</span>
+
+    @Override
+    public List&lt;Ingredient&gt; deserialize(JsonParser jsonParser, DeserializationContext context) throws IOException, JsonProcessingException {
+        // Get ObjectMapper instance from the context
+<span class="fc" id="L20">        ObjectMapper objectMapper = (ObjectMapper) jsonParser.getCodec();</span>
+        // Read JSON tree
+<span class="fc" id="L22">        JsonNode node = objectMapper.readTree(jsonParser);</span>
+
+<span class="fc" id="L24">        List&lt;Ingredient&gt; ingredients = new ArrayList&lt;&gt;();</span>
+
+        // Check if the JSON node is an array
+<span class="pc bpc" id="L27" title="1 of 2 branches missed.">        if (node.isArray()) {</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">            for (JsonNode element : node) {</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">                if (element.isObject()) {</span>
+                    // If the element is an object, deserialize it into an Ingredient
+<span class="fc" id="L31">                    Ingredient ingredient = objectMapper.treeToValue(element, Ingredient.class);</span>
+<span class="fc" id="L32">                    ingredients.add(ingredient);</span>
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">                } else if (element.isTextual()) {</span>
+                    // If the element is a string, create an Ingredient object with just the id
+<span class="fc" id="L35">                    Ingredient ingredient = new Ingredient().setId(element.asText());</span>
+<span class="fc" id="L36">                    ingredients.add(ingredient);</span>
+                }
+<span class="fc" id="L38">            }</span>
+        }
+
+<span class="fc" id="L41">        return ingredients;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

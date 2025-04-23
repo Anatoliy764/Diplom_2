@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CommonRestClient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Diplom_2</a> &gt; <a href="index.source.html" class="el_package">kz.yandex.practicum.qa.sb.common</a> &gt; <span class="el_source">CommonRestClient.java</span></div><h1>CommonRestClient.java</h1><pre class="source lang-java linenums">package kz.yandex.practicum.qa.sb.common;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import io.restassured.RestAssured;
+import io.restassured.config.ObjectMapperConfig;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.path.json.mapper.factory.Jackson2ObjectMapperFactory;
+
+import java.lang.reflect.Type;
+
+<span class="fc" id="L14">public abstract class CommonRestClient {</span>
+
+    static {
+<span class="fc" id="L17">        RestAssured.config()</span>
+<span class="fc" id="L18">                .objectMapperConfig(ObjectMapperConfig.objectMapperConfig().jackson2ObjectMapperFactory(new Jackson2ObjectMapperFactory() {</span>
+                    @Override
+                    public com.fasterxml.jackson.databind.ObjectMapper create(Type type, String s) {
+<span class="nc" id="L21">                        com.fasterxml.jackson.databind.ObjectMapper objectMapper = new com.fasterxml.jackson.databind.ObjectMapper();</span>
+<span class="nc" id="L22">                        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);</span>
+<span class="nc" id="L23">                        objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);</span>
+<span class="nc" id="L24">                        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);</span>
+<span class="nc" id="L25">                        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);</span>
+<span class="nc" id="L26">                        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);</span>
+<span class="nc" id="L27">                        objectMapper.registerModule(new com.fasterxml.jackson.datatype.jsr310.JavaTimeModule());</span>
+
+<span class="nc" id="L29">                        return objectMapper;</span>
+                    }
+                }));
+
+<span class="fc" id="L33">        RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());</span>
+
+<span class="fc" id="L35">        RestAssured.baseURI = Constants.STELLAR_BURGERS_API_BASE_URL;</span>
+<span class="fc" id="L36">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
