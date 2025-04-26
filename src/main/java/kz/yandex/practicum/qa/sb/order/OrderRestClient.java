@@ -2,17 +2,13 @@ package kz.yandex.practicum.qa.sb.order;
 
 
 import io.qameta.allure.Step;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import kz.yandex.practicum.qa.sb.common.ApiException;
 import kz.yandex.practicum.qa.sb.common.ApiResponseValidator;
 import kz.yandex.practicum.qa.sb.common.CommonRestClient;
-import org.apache.http.HttpHeaders;
-import org.apache.http.entity.ContentType;
+import org.apache.http.HttpStatus;
 
 import java.util.Collection;
-import java.util.Map;
 
 
 public final class OrderRestClient extends CommonRestClient {
@@ -25,52 +21,32 @@ public final class OrderRestClient extends CommonRestClient {
         return orderRestClient;
     }
 
-    @Step("create order")
+    @Step("Создание заказа")
     public Order createOrder(Collection<String> ingredientIds) throws ApiException {
         return createOrder(ingredientIds, accessToken);
     }
 
-    @Step("create order")
+    @Step("Создание заказа")
     public static Order createOrder(Collection<String> ingredientIds, String accessToken) throws ApiException {
 
-        RequestSpecification requestSpecification = RestAssured.given()
-                .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
+        Response response = OrderRestAssuredUtil.createOrder(ingredientIds, accessToken);
 
-        if (accessToken != null && !accessToken.isBlank()) {
-            requestSpecification.header(HttpHeaders.AUTHORIZATION, accessToken);
-        }
-
-        Response response = requestSpecification.body(Map.of("ingredients", ingredientIds))
-                .post("/orders")
-                .then()
-                .extract()
-                .response();
-
-        ApiResponseValidator.validate(response);
+        ApiResponseValidator.validate(response, HttpStatus.SC_OK);
 
         return response.then().extract().as(CreateOrderResponse.class).getOrder();
     }
 
-    @Step("get user orders")
+    @Step("Извлечение заказов пользователя")
     public GetUserOrdersResponse getUserOrders() throws ApiException {
         return getUserOrders(accessToken);
     }
 
-    @Step("get user orders")
+    @Step("Извлечение заказов пользователя")
     public static GetUserOrdersResponse getUserOrders(String accessToken) throws ApiException {
-        RequestSpecification requestSpecification = RestAssured.given()
-                .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
 
-        if (accessToken != null && !accessToken.isBlank()) {
-            requestSpecification.header(HttpHeaders.AUTHORIZATION, accessToken);
-        }
+        Response response = OrderRestAssuredUtil.getUserOrders(accessToken);
 
-        Response response = requestSpecification.get("/orders")
-                .then()
-                .extract()
-                .response();
-
-        ApiResponseValidator.validate(response);
+        ApiResponseValidator.validate(response, HttpStatus.SC_OK);
 
         return response.then().extract().as(GetUserOrdersResponse.class);
     }

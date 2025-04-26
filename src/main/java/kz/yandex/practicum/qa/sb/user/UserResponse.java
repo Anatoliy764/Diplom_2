@@ -1,5 +1,6 @@
 package kz.yandex.practicum.qa.sb.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import kz.yandex.practicum.qa.sb.common.CommonApiResponse;
 import lombok.AccessLevel;
@@ -44,5 +45,20 @@ public class UserResponse extends CommonApiResponse {
             }
         }
         this.user = user;
+    }
+
+    @JsonIgnore
+    public boolean isAllTokensInitialized() {
+        return hasAccessToken() && hasRefreshToken();
+    }
+
+    @JsonIgnore
+    public boolean hasAccessToken() {
+        return accessToken != null && !accessToken.isBlank();
+    }
+
+    @JsonIgnore
+    public boolean hasRefreshToken() {
+        return refreshToken != null && !refreshToken.isBlank();
     }
 }

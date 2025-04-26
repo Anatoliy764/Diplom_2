@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="10.786" tests="6" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="22.16" tests="6" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
+    <property name="java.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.0-M2\junit-jupiter-api-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-commons\1.13.0-M2\junit-platform-commons-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.0-M2\junit-jupiter-params-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit5\2.25.0\allure-junit5-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit-platform\2.25.0\allure-junit-platform-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-launcher\1.13.0-M2\junit-platform-launcher-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-engine\1.13.0-M2\junit-platform-engine-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\wongs\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;C:\Users\wongs\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-assertj\2.25.0\allure-assertj-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\wongs\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259 2025-04-23T19-10-57_117-jvmRun1 surefire-20250423191057471_1tmp surefire_0-20250423191057471_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891\surefirebooter-20250427005551545_3.jar C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891 2025-04-27T00-55-51_240-jvmRun1 surefire-20250427005551545_1tmp surefire_0-20250427005551545_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
+    <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.0-M2\junit-jupiter-api-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-commons\1.13.0-M2\junit-platform-commons-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.0-M2\junit-jupiter-params-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit5\2.25.0\allure-junit5-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit-platform\2.25.0\allure-junit-platform-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-launcher\1.13.0-M2\junit-platform-launcher-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-engine\1.13.0-M2\junit-platform-engine-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\wongs\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;C:\Users\wongs\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-assertj\2.25.0\allure-assertj-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\wongs"/>
     <property name="user.language" value="ru"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891\surefirebooter-20250427005551545_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -47,7 +47,7 @@
     <property name="localRepository" value="C:\Users\wongs\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
     <property name="java.io.tmpdir" value="C:\Users\wongs\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2024.3.2.2"/>
+    <property name="idea.version" value="2025.1"/>
     <property name="java.version" value="11.0.15"/>
     <property name="user.dir" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2"/>
     <property name="os.arch" value="amd64"/>
@@ -61,124 +61,56 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testCreateOrderUnauthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.358">
-    <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
-	at org.junit.Assert.assertThrows(Assert.java:1028)
-	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  <testcase name="testCreateOrderUnauthorized(List)[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="2.568">
+    <failure message="Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:91)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ]]></failure>
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "анна.орлов@hotmail.com",
-    "password": "qetyj7utwe4it",
-    "name": "тамара.орехова"
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:02 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 397
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MiwiZXhwIjoxNzQ1NDE1MDYyfQ.wzEk2zerEpawLuLowdhzVnu0mfzaE-TEWmYVWmEpwk8
-ETag: W/"18d-qyAO71fF21wfOWOowlaOxfbLgbA"
-
-{
-    "success": true,
-    "user": {
-        "email": "анна.орлов@hotmail.com",
-        "name": "тамара.орехова"
-    },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MiwiZXhwIjoxNzQ1NDE1MDYyfQ.wzEk2zerEpawLuLowdhzVnu0mfzaE-TEWmYVWmEpwk8",
-    "refreshToken": "30dc4062651614fc2f166ed84ed1f70f9adcff058d4a4b176cf5b52d53f47553e59b1a1694500c3d"
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "анна.орлов@hotmail.com",
-    "password": "qetyj7utwe4it",
-    "name": null
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:03 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 397
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"18d-WnJnOlVoh2d6AYqenAcaYeBXEnU"
-
-{
-    "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw",
-    "refreshToken": "9bfa75d5033817d24dc42d94c965e49ed9d92137c0f476340b9515127d1c7a39fde053c103025c48",
-    "user": {
-        "email": "анна.орлов@hotmail.com",
-        "name": "тамара.орехова"
-    }
-}
-Request method:	GET
+    <system-out><![CDATA[Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
 Proxy:			<none>
 Request params:	<none>
@@ -192,7 +124,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:03 GMT
+Date: Sat, 26 Apr 2025 18:56:00 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 5957
 Connection: keep-alive
@@ -416,7 +348,7 @@ ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
     ]
 }
 Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -428,10 +360,65 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa71",
-        "61c0c5a71d1f82001bdaaa72"
-    ]
+    "email": "вячеслав.костин@hotmail.com",
+    "password": "dvc14osy58",
+    "name": "марина.рябова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 405
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQzOWVkMjgwMDAxYjVkNjA2YSIsImlhdCI6MTc0NTY5Mzc2MywiZXhwIjoxNzQ1Njk0OTYzfQ.7DFdEgbPk6YrFDS5bMMGb5F7_Cs0g3PYaTScvFNeb2c
+ETag: W/"195-gqem1S6+urnyWxs+tebNjsMgbAQ"
+
+{
+    "success": true,
+    "user": {
+        "email": "вячеслав.костин@hotmail.com",
+        "name": "марина.рябова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQzOWVkMjgwMDAxYjVkNjA2YSIsImlhdCI6MTc0NTY5Mzc2MywiZXhwIjoxNzQ1Njk0OTYzfQ.7DFdEgbPk6YrFDS5bMMGb5F7_Cs0g3PYaTScvFNeb2c",
+    "refreshToken": "79ea4feeeb5e2c6a5efe564f97d83817973732b6e685a34630e918e0912163859718177d36980606"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "вячеслав.костин@hotmail.com",
+    "password": "dvc14osy58",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 405
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"195-gMREsf6jXPZqw7BR1mowu0vzJ4I"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQzOWVkMjgwMDAxYjVkNjA2YSIsImlhdCI6MTc0NTY5Mzc2NCwiZXhwIjoxNzQ1Njk0OTY0fQ.4OjSpEXUejMMEDKK5wXYQcJGTviwbPUD-mLCE97AH1A",
+    "refreshToken": "12bbb64bfb617055f53bf224dd53f16e7f9f3fe9521ba4c92e134909fc868bf855ea083eed49ad34",
+    "user": {
+        "email": "вячеслав.костин@hotmail.com",
+        "name": "марина.рябова"
+    }
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
@@ -447,65 +434,366 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "61c0c5a71d1f82001bdaaa71",
-        "61c0c5a71d1f82001bdaaa72"
+        "61c0c5a71d1f82001bdaaa75",
+        "61c0c5a71d1f82001bdaaa76",
+        "61c0c5a71d1f82001bdaaa75"
     ]
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:04 GMT
+Date: Sat, 26 Apr 2025 18:56:04 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 98
+Content-Length: 110
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"62-/x1UVa2VqfnXwJ8elI2Rzc6jxko"
+ETag: W/"6e-s/PiDm5tQx4bric8BhIpxaIH3PI"
 
 {
     "success": true,
-    "name": "Spicy био-марсианский бургер",
+    "name": "Антарианский минеральный бургер",
     "order": {
-        "number": 2586
+        "number": 7465
     }
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQzOWVkMjgwMDAxYjVkNjA2YSIsImlhdCI6MTc0NTY5Mzc2NCwiZXhwIjoxNzQ1Njk0OTY0fQ.4OjSpEXUejMMEDKK5wXYQcJGTviwbPUD-mLCE97AH1A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateOrderUnauthorized(List)[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="2.066">
+    <failure message="HTTP статус код не соответствует ожиданиям ==&gt; expected: &lt;401&gt; but was: &lt;400&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: HTTP статус код не соответствует ожиданиям ==> expected: <401> but was: <400>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "василиса.виноградов@mail.ru",
+    "password": "169ps7lp5wp",
+    "name": "владислав.лапин"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:04 GMT
+Date: Sat, 26 Apr 2025 18:56:06 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 98
+Content-Length: 413
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"62-/x1UVa2VqfnXwJ8elI2Rzc6jxko"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ2OWVkMjgwMDAxYjVkNjA2ZCIsImlhdCI6MTc0NTY5Mzc2NiwiZXhwIjoxNzQ1Njk0OTY2fQ.IkTFKsoLXR115X_BsZSlizDBySRmP8RTPrzfxpQfegQ
+ETag: W/"19d-Xf8af4WkIrH59h5c4HsuE8J2LHo"
 
 {
     "success": true,
-    "name": "Spicy био-марсианский бургер",
-    "order": {
-        "number": 2586
+    "user": {
+        "email": "василиса.виноградов@mail.ru",
+        "name": "владислав.лапин"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ2OWVkMjgwMDAxYjVkNjA2ZCIsImlhdCI6MTc0NTY5Mzc2NiwiZXhwIjoxNzQ1Njk0OTY2fQ.IkTFKsoLXR115X_BsZSlizDBySRmP8RTPrzfxpQfegQ",
+    "refreshToken": "b8767be9650279bfacc4f4976375dcddf29d00dc232b12771005b65da5f01abd23cd48247f187158"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "василиса.виноградов@mail.ru",
+    "password": "169ps7lp5wp",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 413
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"19d-auO/OmFs08HS3mrwto/1qkF08fE"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ2OWVkMjgwMDAxYjVkNjA2ZCIsImlhdCI6MTc0NTY5Mzc2NiwiZXhwIjoxNzQ1Njk0OTY2fQ.IkTFKsoLXR115X_BsZSlizDBySRmP8RTPrzfxpQfegQ",
+    "refreshToken": "7a794b4b275b803214ecfd428546966f2d2826db23a8de53d3ab4f95c7917e647558aba40974d596",
+    "user": {
+        "email": "василиса.виноградов@mail.ru",
+        "name": "владислав.лапин"
     }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        
+    ]
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+
+{
+    "success": false,
+    "message": "Ingredient ids must be provided"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ2OWVkMjgwMDAxYjVkNjA2ZCIsImlhdCI6MTc0NTY5Mzc2NiwiZXhwIjoxNzQ1Njk0OTY2fQ.IkTFKsoLXR115X_BsZSlizDBySRmP8RTPrzfxpQfegQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderAuthorized[0]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="2.931">
+  <testcase name="testCreateOrderUnauthorized(List)[3]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="2.071">
+    <failure message="HTTP статус код не соответствует ожиданиям ==&gt; expected: &lt;401&gt; but was: &lt;500&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: HTTP статус код не соответствует ожиданиям ==> expected: <401> but was: <500>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+]]></failure>
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
-				Accept=*/*
+Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa71",
-        "61c0c5a71d1f82001bdaaa72"
-    ]
+    "email": "варвара.воробьева@mail.ru",
+    "password": "40hmi7mfysx5h8f",
+    "name": "ксения.гаврилова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 411
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ4OWVkMjgwMDAxYjVkNjA3MCIsImlhdCI6MTc0NTY5Mzc2OCwiZXhwIjoxNzQ1Njk0OTY4fQ.17DelsSm8xnwDcGbRLvOFCgBPtdChS8IY8UHZ153vUQ
+ETag: W/"19b-nViFQKIDSyqYaTDGEISOitmyjSk"
+
+{
+    "success": true,
+    "user": {
+        "email": "варвара.воробьева@mail.ru",
+        "name": "ксения.гаврилова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ4OWVkMjgwMDAxYjVkNjA3MCIsImlhdCI6MTc0NTY5Mzc2OCwiZXhwIjoxNzQ1Njk0OTY4fQ.17DelsSm8xnwDcGbRLvOFCgBPtdChS8IY8UHZ153vUQ",
+    "refreshToken": "fb9e7835a9b58108ea9a44240e06aede4360e14fd7bee2812ec42167ea0b347b121e695840f52357"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "варвара.воробьева@mail.ru",
+    "password": "40hmi7mfysx5h8f",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 411
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"19b-rej7GJ25GwJe1RQqLgqm49x5HDY"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ4OWVkMjgwMDAxYjVkNjA3MCIsImlhdCI6MTc0NTY5Mzc2OCwiZXhwIjoxNzQ1Njk0OTY4fQ.17DelsSm8xnwDcGbRLvOFCgBPtdChS8IY8UHZ153vUQ",
+    "refreshToken": "37edd2b724e598ac795190f4ebb9280c59f7b141256ea67387b6fa3656363b39f6fa5f573d89af8f",
+    "user": {
+        "email": "варвара.воробьева@mail.ru",
+        "name": "ксения.гаврилова"
+    }
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
@@ -514,7 +802,148 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "afa7fb73-5ef4-4946-8f48-a0b0c488d297",
+        "ac513d2e-3607-4f20-86cb-e8dff9689860"
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:08 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 148
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Internal Server Error</pre>
+  </body>
+</html>
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzQ4OWVkMjgwMDAxYjVkNjA3MCIsImlhdCI6MTc0NTY5Mzc2OCwiZXhwIjoxNzQ1Njk0OTY4fQ.17DelsSm8xnwDcGbRLvOFCgBPtdChS8IY8UHZ153vUQ
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateOrderAuthorized(List, String, Integer)[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="4.634">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "артем.титова@ya.ru",
+    "password": "3s2zdroiamppvv",
+    "name": "лидия.кириллова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 397
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRhOWVkMjgwMDAxYjVkNjA3MyIsImlhdCI6MTc0NTY5Mzc3MCwiZXhwIjoxNzQ1Njk0OTcwfQ.cupKKJhPrL9Q7kXEZzghTDJMhewex3-qjPbBKFPcPS4
+ETag: W/"18d-WnQnweZrOG4xiDec5NPoKFh6If8"
+
+{
+    "success": true,
+    "user": {
+        "email": "артем.титова@ya.ru",
+        "name": "лидия.кириллова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRhOWVkMjgwMDAxYjVkNjA3MyIsImlhdCI6MTc0NTY5Mzc3MCwiZXhwIjoxNzQ1Njk0OTcwfQ.cupKKJhPrL9Q7kXEZzghTDJMhewex3-qjPbBKFPcPS4",
+    "refreshToken": "84f3c2dd7fe2010c049b8ac2d5478bbe32898c93fbeb8766a6b05204975db286374f095a2d8d0316"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "артем.титова@ya.ru",
+    "password": "3s2zdroiamppvv",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 397
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"18d-9zhwk3oHrljYG6lsjFDc1TDxMeA"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRhOWVkMjgwMDAxYjVkNjA3MyIsImlhdCI6MTc0NTY5Mzc3MCwiZXhwIjoxNzQ1Njk0OTcwfQ.cupKKJhPrL9Q7kXEZzghTDJMhewex3-qjPbBKFPcPS4",
+    "refreshToken": "90f0faea2e05fb52dcaf032471805ddfc4f6a5be3a2f45dc88eb6ad0bcef31e6b8f075590f4e0581",
+    "user": {
+        "email": "артем.титова@ya.ru",
+        "name": "лидия.кириллова"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRhOWVkMjgwMDAxYjVkNjA3MyIsImlhdCI6MTc0NTY5Mzc3MCwiZXhwIjoxNzQ1Njk0OTcwfQ.cupKKJhPrL9Q7kXEZzghTDJMhewex3-qjPbBKFPcPS4
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -522,37 +951,52 @@ Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "61c0c5a71d1f82001bdaaa71",
+        "61c0c5a71d1f82001bdaaa73",
+        "61c0c5a71d1f82001bdaaa6c",
         "61c0c5a71d1f82001bdaaa72"
     ]
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
+Date: Sat, 26 Apr 2025 18:56:13 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 1251
+Content-Length: 1589
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"4e3-qYt6QyfIymmJEiVvROA/1M9qI14"
+ETag: W/"635-S1gpAgBuw+SjNsz49dp1020Mhlg"
 
 {
     "success": true,
-    "name": "Spicy био-марсианский бургер",
+    "name": "Space spicy краторный бургер",
     "order": {
         "ingredients": [
             {
-                "_id": "61c0c5a71d1f82001bdaaa71",
-                "name": "Биокотлета из марсианской Магнолии",
-                "type": "main",
-                "proteins": 420,
-                "fat": 142,
-                "carbohydrates": 242,
-                "calories": 4242,
-                "price": 424,
-                "image": "https://code.s3.yandex.net/react/code/meat-01.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+                "_id": "61c0c5a71d1f82001bdaaa73",
+                "name": "Соус фирменный Space Sauce",
+                "type": "sauce",
+                "proteins": 50,
+                "fat": 22,
+                "carbohydrates": 11,
+                "calories": 14,
+                "price": 80,
+                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa6c",
+                "name": "Краторная булка N-200i",
+                "type": "bun",
+                "proteins": 80,
+                "fat": 24,
+                "carbohydrates": 53,
+                "calories": 420,
+                "price": 1255,
+                "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
                 "__v": 0
             },
             {
@@ -570,149 +1014,124 @@ ETag: W/"4e3-qYt6QyfIymmJEiVvROA/1M9qI14"
                 "__v": 0
             }
         ],
-        "_id": "6808e6e89ed280001b5d305a",
+        "_id": "680d2c4a9ed280001b5d6076",
         "owner": {
-            "name": "тамара.орехова",
-            "email": "анна.орлов@hotmail.com",
-            "createdAt": "2025-04-23T13:11:02.155Z",
-            "updatedAt": "2025-04-23T13:11:02.155Z"
+            "name": "лидия.кириллова",
+            "email": "артем.титова@ya.ru",
+            "createdAt": "2025-04-26T18:56:10.213Z",
+            "updatedAt": "2025-04-26T18:56:10.213Z"
         },
         "status": "done",
-        "name": "Spicy био-марсианский бургер",
-        "createdAt": "2025-04-23T13:11:04.480Z",
-        "updatedAt": "2025-04-23T13:11:06.148Z",
-        "number": 218413,
-        "price": 514
+        "name": "Space spicy краторный бургер",
+        "createdAt": "2025-04-26T18:56:10.929Z",
+        "updatedAt": "2025-04-26T18:56:12.618Z",
+        "number": 219349,
+        "price": 1425
     }
 }
-HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRhOWVkMjgwMDAxYjVkNjA3MyIsImlhdCI6MTc0NTY5Mzc3MCwiZXhwIjoxNzQ1Njk0OTcwfQ.cupKKJhPrL9Q7kXEZzghTDJMhewex3-qjPbBKFPcPS4
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
+Date: Sat, 26 Apr 2025 18:56:14 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 1251
+Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"4e3-qYt6QyfIymmJEiVvROA/1M9qI14"
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
 {
     "success": true,
-    "name": "Spicy био-марсианский бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa71",
-                "name": "Биокотлета из марсианской Магнолии",
-                "type": "main",
-                "proteins": 420,
-                "fat": 142,
-                "carbohydrates": 242,
-                "calories": 4242,
-                "price": 424,
-                "image": "https://code.s3.yandex.net/react/code/meat-01.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa72",
-                "name": "Соус Spicy-X",
-                "type": "sauce",
-                "proteins": 30,
-                "fat": 20,
-                "carbohydrates": 40,
-                "calories": 30,
-                "price": 90,
-                "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6808e6e89ed280001b5d305a",
-        "owner": {
-            "name": "тамара.орехова",
-            "email": "анна.орлов@hotmail.com",
-            "createdAt": "2025-04-23T13:11:02.155Z",
-            "updatedAt": "2025-04-23T13:11:02.155Z"
-        },
-        "status": "done",
-        "name": "Spicy био-марсианский бургер",
-        "createdAt": "2025-04-23T13:11:04.480Z",
-        "updatedAt": "2025-04-23T13:11:06.148Z",
-        "number": 218413,
-        "price": 514
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateOrderAuthorized(List, String, Integer)[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="1.936">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "степан.белякова@mail.ru",
+    "password": "bsgnx6vf",
+    "name": "альберт.самойлова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 409
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRlOWVkMjgwMDAxYjVkNjA3NyIsImlhdCI6MTc0NTY5Mzc3NCwiZXhwIjoxNzQ1Njk0OTc0fQ.E12x8OBLdtvuj1Rrk0tl-Y4VKodugMDRxhIHL_QahK8
+ETag: W/"199-9Q0vxNlCkaVtE8f+oZ7+Ia674dw"
+
+{
+    "success": true,
+    "user": {
+        "email": "степан.белякова@mail.ru",
+        "name": "альберт.самойлова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRlOWVkMjgwMDAxYjVkNjA3NyIsImlhdCI6MTc0NTY5Mzc3NCwiZXhwIjoxNzQ1Njk0OTc0fQ.E12x8OBLdtvuj1Rrk0tl-Y4VKodugMDRxhIHL_QahK8",
+    "refreshToken": "1443ad1e9ebbde28d609e4bfa29d82beca7ce3efdbffd3d03d788b14278ec2fc389c00b42628f689"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "степан.белякова@mail.ru",
+    "password": "bsgnx6vf",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 409
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"199-JWEzWdITppgFYLIssxz3sVhOU7U"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRlOWVkMjgwMDAxYjVkNjA3NyIsImlhdCI6MTc0NTY5Mzc3NSwiZXhwIjoxNzQ1Njk0OTc1fQ.Q7iW7r-LL2--mCfMPTCjn-62FbIQ0vGVKSeCcnVPMp8",
+    "refreshToken": "7519a6a7de3d0ad250d05a89a1e4daf063a38112bab8fdd7a29e892cb26c95a0a40e652dd169bd1f",
+    "user": {
+        "email": "степан.белякова@mail.ru",
+        "name": "альберт.самойлова"
     }
 }
-]]></system-out>
-  </testcase>
-  <testcase name="testCreateOrderUnauthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.298">
-    <failure message="unexpected exception type thrown; expected:&lt;kz.yandex.practicum.qa.sb.common.AuthorizationException&gt; but was:&lt;kz.yandex.practicum.qa.sb.common.ApiException&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
-	at org.junit.Assert.assertThrows(Assert.java:1020)
-	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: kz.yandex.practicum.qa.sb.common.ApiException: Ingredient ids must be provided
-	at kz.yandex.practicum.qa.sb.common.ApiResponseValidator.validate(ApiResponseValidator.java:24)
-	at kz.yandex.practicum.qa.sb.order.OrderRestClient.createOrder(OrderRestClient.java:49)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:109)
-	at org.junit.Assert.assertThrows(Assert.java:1001)
-	... 40 more
-]]></failure>
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        
-    ]
-}
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -720,73 +1139,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        
-    ]
-}
-HTTP/1.1 400 Bad Request
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 61
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
-
-{
-    "success": false,
-    "message": "Ingredient ids must be provided"
-}
-HTTP/1.1 400 Bad Request
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 61
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
-
-{
-    "success": false,
-    "message": "Ingredient ids must be provided"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="testCreateOrderAuthorized[1]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.312">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        
-    ]
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRlOWVkMjgwMDAxYjVkNjA3NyIsImlhdCI6MTc0NTY5Mzc3NSwiZXhwIjoxNzQ1Njk0OTc1fQ.Q7iW7r-LL2--mCfMPTCjn-62FbIQ0vGVKSeCcnVPMp8
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -799,7 +1152,7 @@ Body:
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
+Date: Sat, 26 Apr 2025 18:56:15 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 61
 Connection: keep-alive
@@ -811,74 +1164,38 @@ ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
     "success": false,
     "message": "Ingredient ids must be provided"
 }
-HTTP/1.1 400 Bad Request
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzRlOWVkMjgwMDAxYjVkNjA3NyIsImlhdCI6MTc0NTY5Mzc3NSwiZXhwIjoxNzQ1Njk0OTc1fQ.Q7iW7r-LL2--mCfMPTCjn-62FbIQ0vGVKSeCcnVPMp8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:07 GMT
+Date: Sat, 26 Apr 2025 18:56:16 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 61
+Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3d-2OjyVsQbcrSKTjJtjBJ5FY7GEPQ"
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
 {
-    "success": false,
-    "message": "Ingredient ids must be provided"
+    "success": true,
+    "message": "User successfully removed"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testCreateOrderUnauthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.413">
-    <failure message="unexpected exception type thrown; expected:&lt;kz.yandex.practicum.qa.sb.common.AuthorizationException&gt; but was:&lt;kz.yandex.practicum.qa.sb.common.ApiException&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: unexpected exception type thrown; expected:<kz.yandex.practicum.qa.sb.common.AuthorizationException> but was:<kz.yandex.practicum.qa.sb.common.ApiException>
-	at org.junit.Assert.assertThrows(Assert.java:1020)
-	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.testCreateOrderUnauthorized(CreateOrderTest.java:108)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: kz.yandex.practicum.qa.sb.common.ApiException
-	at kz.yandex.practicum.qa.sb.common.ApiResponseValidator.validate(ApiResponseValidator.java:24)
-	at kz.yandex.practicum.qa.sb.order.OrderRestClient.createOrder(OrderRestClient.java:49)
-	at kz.yandex.practicum.qa.sb.order.CreateOrderTest.lambda$testCreateOrderUnauthorized$0(CreateOrderTest.java:109)
-	at org.junit.Assert.assertThrows(Assert.java:1001)
-	... 40 more
-]]></failure>
+  <testcase name="testCreateOrderAuthorized(List, String, Integer)[3]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="1.948">
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -890,10 +1207,65 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "ingredients": [
-        "7e57425a-3dd5-4bb9-bf9d-d446dda8a780",
-        "a0605377-5065-4c0a-9407-8fece14fe631"
-    ]
+    "email": "геннадии.мясников@yahoo.com",
+    "password": "f1usoeaqn768d",
+    "name": "макар.емельянова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 413
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUwOWVkMjgwMDAxYjVkNjA3YSIsImlhdCI6MTc0NTY5Mzc3NiwiZXhwIjoxNzQ1Njk0OTc2fQ.lvD8-En81EJWycG0rs6XidkgpB9Miz2kbfLUWMq5Ghg
+ETag: W/"19d-9HDtpuZa3XWCh6HkMCoAQ+5ru90"
+
+{
+    "success": true,
+    "user": {
+        "email": "геннадии.мясников@yahoo.com",
+        "name": "макар.емельянова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUwOWVkMjgwMDAxYjVkNjA3YSIsImlhdCI6MTc0NTY5Mzc3NiwiZXhwIjoxNzQ1Njk0OTc2fQ.lvD8-En81EJWycG0rs6XidkgpB9Miz2kbfLUWMq5Ghg",
+    "refreshToken": "c5ab691739f6b865ba35531e9d0ff35f98d1a664f8a3dee979bffd54eb6e98b8f1398c35361d8a06"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "геннадии.мясников@yahoo.com",
+    "password": "f1usoeaqn768d",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 413
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"19d-n4cFBIt4A1ZlSD9zqrNBveoooEo"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUwOWVkMjgwMDAxYjVkNjA3YSIsImlhdCI6MTc0NTY5Mzc3NywiZXhwIjoxNzQ1Njk0OTc3fQ.xkloRsn4UnhlN7uQbc2wDWRa1STFeIonhaoxtF9NLg0",
+    "refreshToken": "e7be89ee249ab5e4e47c8fb6281cefb1499ed78ac3474ca53d33b1f3ea65a37caf2100130855db9e",
+    "user": {
+        "email": "геннадии.мясников@yahoo.com",
+        "name": "макар.емельянова"
+    }
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
@@ -902,20 +1274,21 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUwOWVkMjgwMDAxYjVkNjA3YSIsImlhdCI6MTc0NTY5Mzc3NywiZXhwIjoxNzQ1Njk0OTc3fQ.xkloRsn4UnhlN7uQbc2wDWRa1STFeIonhaoxtF9NLg0
+				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "ingredients": [
-        "7e57425a-3dd5-4bb9-bf9d-d446dda8a780",
-        "a0605377-5065-4c0a-9407-8fece14fe631"
+        "e0b0df01-ea40-46cf-bcb3-06a73bffd980",
+        "57d7faa3-4785-491b-bc94-19a901e9bf37"
     ]
 }
 HTTP/1.1 500 Internal Server Error
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:08 GMT
+Date: Sat, 26 Apr 2025 18:56:17 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 148
 Connection: keep-alive
@@ -933,107 +1306,33 @@ X-Content-Type-Options: nosniff
     <pre>Internal Server Error</pre>
   </body>
 </html>
-HTTP/1.1 500 Internal Server Error
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:08 GMT
-Content-Type: text/html; charset=utf-8
-Content-Length: 148
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-Content-Security-Policy: default-src 'none'
-X-Content-Type-Options: nosniff
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-  </head>
-  <body>
-    <pre>Internal Server Error</pre>
-  </body>
-</html>
-]]></system-out>
-  </testcase>
-  <testcase name="testCreateOrderAuthorized[2]" classname="kz.yandex.practicum.qa.sb.order.CreateOrderTest" time="0.284">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUwOWVkMjgwMDAxYjVkNjA3YSIsImlhdCI6MTc0NTY5Mzc3NywiZXhwIjoxNzQ1Njk0OTc3fQ.xkloRsn4UnhlN7uQbc2wDWRa1STFeIonhaoxtF9NLg0
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "7e57425a-3dd5-4bb9-bf9d-d446dda8a780",
-        "a0605377-5065-4c0a-9407-8fece14fe631"
-    ]
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmU2OWVkMjgwMDAxYjVkMzA1NyIsImlhdCI6MTc0NTQxMzg2MywiZXhwIjoxNzQ1NDE1MDYzfQ.baPtBe0c569RhHLGdrbX9cPi33KR2zUG7EUyc-nU9cw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "7e57425a-3dd5-4bb9-bf9d-d446dda8a780",
-        "a0605377-5065-4c0a-9407-8fece14fe631"
-    ]
-}
-HTTP/1.1 500 Internal Server Error
+Body:			<none>
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:08 GMT
-Content-Type: text/html; charset=utf-8
-Content-Length: 148
+Date: Sat, 26 Apr 2025 18:56:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Content-Security-Policy: default-src 'none'
-X-Content-Type-Options: nosniff
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-  </head>
-  <body>
-    <pre>Internal Server Error</pre>
-  </body>
-</html>
-HTTP/1.1 500 Internal Server Error
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:08 GMT
-Content-Type: text/html; charset=utf-8
-Content-Length: 148
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-Content-Security-Policy: default-src 'none'
-X-Content-Type-Options: nosniff
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-  </head>
-  <body>
-    <pre>Internal Server Error</pre>
-  </body>
-</html>
+{
+    "success": true,
+    "message": "User successfully removed"
+}
 ]]></system-out>
   </testcase>
 </testsuite>

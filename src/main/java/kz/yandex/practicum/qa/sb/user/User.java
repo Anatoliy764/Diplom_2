@@ -46,23 +46,6 @@ public class User implements Cloneable {
                 .setRefreshToken(refreshToken);
     }
 
-    public boolean hasEmail() {
-        return email != null && !email.isBlank();
-    }
-
-    public boolean hasPassword() {
-        return password != null && !password.isBlank();
-    }
-
-    public boolean hasName() {
-        return name != null && !name.isBlank();
-    }
-
-    @JsonIgnore
-    public boolean isAllFieldsInitialized() {
-        return hasEmail() && hasPassword() && hasName();
-    }
-
     public boolean hasAccessToken() {
         return accessToken != null && !accessToken.isBlank();
     }
@@ -74,16 +57,5 @@ public class User implements Cloneable {
     @JsonIgnore
     public boolean isAllTokensInitialized() {
         return hasAccessToken() && hasRefreshToken();
-    }
-
-    public User from(User user) {
-        if(user != null) {
-            setEmail(user.getEmail());
-            setName(user.getName());
-            setPassword(user.getPassword());
-            setAccessToken(user.getAccessToken());
-            setRefreshToken(user.getRefreshToken());
-        }
-        return this;
     }
 }

@@ -17,13 +17,14 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public final class IngredientRestClient extends CommonRestClient {
 
+    private static final String INGREDIENTS_PATH = "/ingredients";
     private static final Map<String, Ingredient> INGREDIENTS = new ConcurrentHashMap<>();
 
     public static List<Ingredient> getIngredients() throws ApiException {
 
         Response response = RestAssured.given()
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
-                .get("/ingredients")
+                .get(INGREDIENTS_PATH)
                 .then()
                 .extract()
                 .response();
@@ -35,17 +36,6 @@ public final class IngredientRestClient extends CommonRestClient {
         ingredients.forEach(ingredient -> INGREDIENTS.put(ingredient.getId(), ingredient));
 
         return ingredients;
-    }
-
-    public static Ingredient getIngredient(String id) throws ApiException {
-        if (INGREDIENTS.isEmpty()) {
-            getIngredients();
-        }
-        return INGREDIENTS.get(id);
-    }
-
-    public static String getRandomIngredientId() throws ApiException {
-        return getRandomIngredientIds(1).iterator().next();
     }
 
     public static Collection<String> getRandomIngredientIds(int count) throws ApiException {

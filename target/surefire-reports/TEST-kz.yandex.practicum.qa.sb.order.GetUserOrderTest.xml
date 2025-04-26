@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="10.58" tests="3" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="26.059" tests="3" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
+    <property name="java.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.0-M2\junit-jupiter-api-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-commons\1.13.0-M2\junit-platform-commons-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.0-M2\junit-jupiter-params-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit5\2.25.0\allure-junit5-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit-platform\2.25.0\allure-junit-platform-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-launcher\1.13.0-M2\junit-platform-launcher-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-engine\1.13.0-M2\junit-platform-engine-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\wongs\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;C:\Users\wongs\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-assertj\2.25.0\allure-assertj-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\wongs\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259 2025-04-23T19-10-57_117-jvmRun1 surefire-20250423191057471_1tmp surefire_0-20250423191057471_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891\surefirebooter-20250427005551545_3.jar C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891 2025-04-27T00-55-51_240-jvmRun1 surefire-20250427005551545_1tmp surefire_0-20250427005551545_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;"/>
+    <property name="surefire.test.class.path" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\test-classes;D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2\target\classes;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.13.0-M2\junit-jupiter-api-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-commons\1.13.0-M2\junit-platform-commons-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\wongs\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.13.0-M2\junit-jupiter-params-5.13.0-M2.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\wongs\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\wongs\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\wongs\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\wongs\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\wongs\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\wongs\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\wongs\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\wongs\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\wongs\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\wongs\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\wongs\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\wongs\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\wongs\.m2\repository\org\projectlombok\lombok\1.18.4\lombok-1.18.4.jar;C:\Users\wongs\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\wongs\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\wongs\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\wongs\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\wongs\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit5\2.25.0\allure-junit5-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-junit-platform\2.25.0\allure-junit-platform-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-launcher\1.13.0-M2\junit-platform-launcher-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\org\junit\platform\junit-platform-engine\1.13.0-M2\junit-platform-engine-1.13.0-M2.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\wongs\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\wongs\.m2\repository\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar;C:\Users\wongs\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-assertj\2.25.0\allure-assertj-2.25.0.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\wongs\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\wongs\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\wongs"/>
     <property name="user.language" value="ru"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire9079084766132007259\surefirebooter-20250423191057471_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\wongs\AppData\Local\Temp\surefire9870185306868681891\surefirebooter-20250427005551545_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -47,7 +47,7 @@
     <property name="localRepository" value="C:\Users\wongs\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
     <property name="java.io.tmpdir" value="C:\Users\wongs\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2024.3.2.2"/>
+    <property name="idea.version" value="2025.1"/>
     <property name="java.version" value="11.0.15"/>
     <property name="user.dir" value="D:\IdeaProjects\yandex-practicum\Diplom\Diplom_2"/>
     <property name="os.arch" value="amd64"/>
@@ -61,41 +61,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetOrdersOfAuthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="7.955">
-    <failure message="total count of orders in response does not match with actual orders count expected:&lt;2&gt; but was:&lt;218415&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: total count of orders in response does not match with actual orders count expected:<2> but was:<218415>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser(GetUserOrderTest.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  <testcase name="testGetOrdersOfAuthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="9.237">
+    <failure message="Unexpected exception thrown: org.opentest4j.AssertionFailedError: Тело ответа не содержит ожидаемое значение в атрибуте total ==&gt; expected: &lt;2&gt; but was: &lt;219351&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.opentest4j.AssertionFailedError: Тело ответа не содержит ожидаемое значение в атрибуте total ==> expected: <2> but was: <219351>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3199)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser(GetUserOrderTest.java:72)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.opentest4j.AssertionFailedError: Тело ответа не содержит ожидаемое значение в атрибуте total ==> expected: <2> but was: <219351>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.lambda$testGetOrdersOfAuthorizedUser$6(GetUserOrderTest.java:86)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
 ]]></failure>
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -110,66 +95,29 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "валерия.королев@ya.ru",
-    "password": "d7obeytda0b3h",
-    "name": "роман.селиверстова"
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "валерия.королев@ya.ru",
-    "password": "d7obeytda0b3h",
-    "name": "роман.селиверстова"
+    "email": "зинаида.муравьев@mail.ru",
+    "password": "58ow7yo8bntx",
+    "name": "кира.кудрявцев"
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:09 GMT
+Date: Sat, 26 Apr 2025 18:56:18 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 409
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw
-ETag: W/"199-9MpSHCApb56DWHwQeJ/mbVvxw4Q"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OCwiZXhwIjoxNzQ1Njk0OTc4fQ.dC8zKOMJF5Fg4uDOTxvE0kAkKHVsgSXjX-RR00LN-6o
+ETag: W/"195-9Z7j6jbGMxCD03+qwZvVoJoSpps"
 
 {
     "success": true,
     "user": {
-        "email": "валерия.королев@ya.ru",
-        "name": "роман.селиверстова"
+        "email": "зинаида.муравьев@mail.ru",
+        "name": "кира.кудрявцев"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw",
-    "refreshToken": "561d2355e961db468a17e750ebc31b4ff2bc52b640d963d4a53c7f9096957a4887971461a1edafe2"
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:09 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 409
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw
-ETag: W/"199-9MpSHCApb56DWHwQeJ/mbVvxw4Q"
-
-{
-    "success": true,
-    "user": {
-        "email": "валерия.королев@ya.ru",
-        "name": "роман.селиверстова"
-    },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg2OSwiZXhwIjoxNzQ1NDE1MDY5fQ.WK729HnXXoHJbuiSK01Q4yFC25XAXXx7fDvIgaXahsw",
-    "refreshToken": "561d2355e961db468a17e750ebc31b4ff2bc52b640d963d4a53c7f9096957a4887971461a1edafe2"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OCwiZXhwIjoxNzQ1Njk0OTc4fQ.dC8zKOMJF5Fg4uDOTxvE0kAkKHVsgSXjX-RR00LN-6o",
+    "refreshToken": "eb07b25b0fa2731828db654dec56092250802d4132796962db3c36111b582a3681b7f7b1715c7a42"
 }
 Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
@@ -184,375 +132,27 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "валерия.королев@ya.ru",
-    "password": "d7obeytda0b3h",
-    "name": null
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "email": "валерия.королев@ya.ru",
-    "password": "d7obeytda0b3h",
+    "email": "зинаида.муравьев@mail.ru",
+    "password": "58ow7yo8bntx",
     "name": null
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:10 GMT
+Date: Sat, 26 Apr 2025 18:56:19 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 409
+Content-Length: 405
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"199-3DY6b1egzvtPVGebyGF8OORtea4"
+ETag: W/"195-/6SJb8/b9OTHZWwcLQYPYl2Xg2o"
 
 {
     "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU",
-    "refreshToken": "3d492aa01c4bdf70194244d73a13cea7a1fb5f9ad8253fa25b937ee542900c8960b55a25f09a6f26",
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.Q5KyaXHbtAUH6myNAbGNmz6x_u_ULLlf6d2zxhIkmr8",
+    "refreshToken": "12f0ac8186628a5c744db39dd888b9f23c8942ada5e72b0579d047854ce55b186906a9649bc81471",
     "user": {
-        "email": "валерия.королев@ya.ru",
-        "name": "роман.селиверстова"
-    }
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:10 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 409
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"199-3DY6b1egzvtPVGebyGF8OORtea4"
-
-{
-    "success": true,
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU",
-    "refreshToken": "3d492aa01c4bdf70194244d73a13cea7a1fb5f9ad8253fa25b937ee542900c8960b55a25f09a6f26",
-    "user": {
-        "email": "валерия.королев@ya.ru",
-        "name": "роман.селиверстова"
-    }
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa78"
-    ]
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa78"
-    ]
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:13 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 891
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"37b-0QbYdRucA6UyqnO/v/k1NrM+w2M"
-
-{
-    "success": true,
-    "name": "Альфа-сахаридный бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6808e6ee9ed280001b5d305e",
-        "owner": {
-            "name": "роман.селиверстова",
-            "email": "валерия.королев@ya.ru",
-            "createdAt": "2025-04-23T13:11:09.594Z",
-            "updatedAt": "2025-04-23T13:11:09.594Z"
-        },
-        "status": "done",
-        "name": "Альфа-сахаридный бургер",
-        "createdAt": "2025-04-23T13:11:10.308Z",
-        "updatedAt": "2025-04-23T13:11:12.029Z",
-        "number": 218414,
-        "price": 762
-    }
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:13 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 891
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"37b-0QbYdRucA6UyqnO/v/k1NrM+w2M"
-
-{
-    "success": true,
-    "name": "Альфа-сахаридный бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6808e6ee9ed280001b5d305e",
-        "owner": {
-            "name": "роман.селиверстова",
-            "email": "валерия.королев@ya.ru",
-            "createdAt": "2025-04-23T13:11:09.594Z",
-            "updatedAt": "2025-04-23T13:11:09.594Z"
-        },
-        "status": "done",
-        "name": "Альфа-сахаридный бургер",
-        "createdAt": "2025-04-23T13:11:10.308Z",
-        "updatedAt": "2025-04-23T13:11:12.029Z",
-        "number": 218414,
-        "price": 762
-    }
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa73",
-        "61c0c5a71d1f82001bdaaa78",
-        "61c0c5a71d1f82001bdaaa78"
-    ]
-}
-Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "ingredients": [
-        "61c0c5a71d1f82001bdaaa73",
-        "61c0c5a71d1f82001bdaaa78",
-        "61c0c5a71d1f82001bdaaa78"
-    ]
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:16 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 1694
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"69e-I69q95hTbejC5jroLhQOF0yOW7E"
-
-{
-    "success": true,
-    "name": "Альфа-сахаридный space бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa73",
-                "name": "Соус фирменный Space Sauce",
-                "type": "sauce",
-                "proteins": 50,
-                "fat": 22,
-                "carbohydrates": 11,
-                "calories": 14,
-                "price": 80,
-                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6808e6f19ed280001b5d3061",
-        "owner": {
-            "name": "роман.селиверстова",
-            "email": "валерия.королев@ya.ru",
-            "createdAt": "2025-04-23T13:11:09.594Z",
-            "updatedAt": "2025-04-23T13:11:09.594Z"
-        },
-        "status": "done",
-        "name": "Альфа-сахаридный space бургер",
-        "createdAt": "2025-04-23T13:11:13.344Z",
-        "updatedAt": "2025-04-23T13:11:15.139Z",
-        "number": 218415,
-        "price": 1604
-    }
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:16 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 1694
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"69e-I69q95hTbejC5jroLhQOF0yOW7E"
-
-{
-    "success": true,
-    "name": "Альфа-сахаридный space бургер",
-    "order": {
-        "ingredients": [
-            {
-                "_id": "61c0c5a71d1f82001bdaaa73",
-                "name": "Соус фирменный Space Sauce",
-                "type": "sauce",
-                "proteins": 50,
-                "fat": 22,
-                "carbohydrates": 11,
-                "calories": 14,
-                "price": 80,
-                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            },
-            {
-                "_id": "61c0c5a71d1f82001bdaaa78",
-                "name": "Кристаллы марсианских альфа-сахаридов",
-                "type": "main",
-                "proteins": 234,
-                "fat": 432,
-                "carbohydrates": 111,
-                "calories": 189,
-                "price": 762,
-                "image": "https://code.s3.yandex.net/react/code/core.png",
-                "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
-                "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
-                "__v": 0
-            }
-        ],
-        "_id": "6808e6f19ed280001b5d3061",
-        "owner": {
-            "name": "роман.селиверстова",
-            "email": "валерия.королев@ya.ru",
-            "createdAt": "2025-04-23T13:11:09.594Z",
-            "updatedAt": "2025-04-23T13:11:09.594Z"
-        },
-        "status": "done",
-        "name": "Альфа-сахаридный space бургер",
-        "createdAt": "2025-04-23T13:11:13.344Z",
-        "updatedAt": "2025-04-23T13:11:15.139Z",
-        "number": 218415,
-        "price": 1604
+        "email": "зинаида.муравьев@mail.ru",
+        "name": "кира.кудрявцев"
     }
 }
 Request method:	POST
@@ -568,66 +168,185 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "римма.герасимова@mail.ru",
-    "password": "agvjlcbn96w6vc",
-    "name": "наталья.власова"
+    "email": "мария.шарапов@yahoo.com",
+    "password": "1l45pwzme4eso",
+    "name": "василиса.медведев"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:19 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 407
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUzOWVkMjgwMDAxYjVkNjA4MCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.aPfoxCIphdJt5Jk4weGEliBR-dFjHeKjKg63Fep-SJ0
+ETag: W/"197-Hsd2ZOpQl2pfITdlUM5Mp2zMplU"
+
+{
+    "success": true,
+    "user": {
+        "email": "мария.шарапов@yahoo.com",
+        "name": "василиса.медведев"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUzOWVkMjgwMDAxYjVkNjA4MCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.aPfoxCIphdJt5Jk4weGEliBR-dFjHeKjKg63Fep-SJ0",
+    "refreshToken": "fdf56ff9d8eb51805a17c04e9d9571aa410c7efa4cc998fbbf6d640b332984d8440a48bc7d42a000"
 }
 Request method:	POST
-Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.Q5KyaXHbtAUH6myNAbGNmz6x_u_ULLlf6d2zxhIkmr8
+				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "римма.герасимова@mail.ru",
-    "password": "agvjlcbn96w6vc",
-    "name": "наталья.власова"
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa77",
+        "61c0c5a71d1f82001bdaaa79",
+        "61c0c5a71d1f82001bdaaa79"
+    ]
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:16 GMT
+Date: Sat, 26 Apr 2025 18:56:22 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 407
+Content-Length: 1660
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
-ETag: W/"197-96kEKT0AFYCIGDjDT5ci+DZZ6kA"
+ETag: W/"67c-5VTa7ZPKQrl3BdUZg+1+Q28DTcA"
 
 {
     "success": true,
-    "user": {
-        "email": "римма.герасимова@mail.ru",
-        "name": "наталья.власова"
-    },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M",
-    "refreshToken": "3d38c14f0fe959210147fb3e0bcf2c4e5cb2c3c72d8c76a8701fc5c2e2962b10fdb21287a3275a0d"
+    "name": "Фалленианский экзо-плантаго бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa77",
+                "name": "Плоды Фалленианского дерева",
+                "type": "main",
+                "proteins": 20,
+                "fat": 5,
+                "carbohydrates": 55,
+                "calories": 77,
+                "price": 874,
+                "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa79",
+                "name": "Мини-салат Экзо-Плантаго",
+                "type": "main",
+                "proteins": 1,
+                "fat": 2,
+                "carbohydrates": 3,
+                "calories": 6,
+                "price": 4400,
+                "image": "https://code.s3.yandex.net/react/code/salad.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa79",
+                "name": "Мини-салат Экзо-Плантаго",
+                "type": "main",
+                "proteins": 1,
+                "fat": 2,
+                "carbohydrates": 3,
+                "calories": 6,
+                "price": 4400,
+                "image": "https://code.s3.yandex.net/react/code/salad.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c539ed280001b5d6082",
+        "owner": {
+            "name": "кира.кудрявцев",
+            "email": "зинаида.муравьев@mail.ru",
+            "createdAt": "2025-04-26T18:56:18.827Z",
+            "updatedAt": "2025-04-26T18:56:18.827Z"
+        },
+        "status": "done",
+        "name": "Фалленианский экзо-плантаго бургер",
+        "createdAt": "2025-04-26T18:56:19.959Z",
+        "updatedAt": "2025-04-26T18:56:21.786Z",
+        "number": 219350,
+        "price": 9674
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.Q5KyaXHbtAUH6myNAbGNmz6x_u_ULLlf6d2zxhIkmr8
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa76"
+    ]
 }
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:16 GMT
+Date: Sat, 26 Apr 2025 18:56:25 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 407
+Content-Length: 879
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
-ETag: W/"197-96kEKT0AFYCIGDjDT5ci+DZZ6kA"
+ETag: W/"36f-k3Cr8CZ/njvIV8f6eZZ0vPQAWds"
 
 {
     "success": true,
-    "user": {
-        "email": "римма.герасимова@mail.ru",
-        "name": "наталья.власова"
-    },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M",
-    "refreshToken": "3d38c14f0fe959210147fb3e0bcf2c4e5cb2c3c72d8c76a8701fc5c2e2962b10fdb21287a3275a0d"
+    "name": "Минеральный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa76",
+                "name": "Хрустящие минеральные кольца",
+                "type": "main",
+                "proteins": 808,
+                "fat": 689,
+                "carbohydrates": 609,
+                "calories": 986,
+                "price": 300,
+                "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c579ed280001b5d6083",
+        "owner": {
+            "name": "кира.кудрявцев",
+            "email": "зинаида.муравьев@mail.ru",
+            "createdAt": "2025-04-26T18:56:18.827Z",
+            "updatedAt": "2025-04-26T18:56:18.827Z"
+        },
+        "status": "done",
+        "name": "Минеральный бургер",
+        "createdAt": "2025-04-26T18:56:23.114Z",
+        "updatedAt": "2025-04-26T18:56:24.963Z",
+        "number": 219351,
+        "price": 300
+    }
 }
 Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
@@ -636,157 +355,374 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.Q5KyaXHbtAUH6myNAbGNmz6x_u_ULLlf6d2zxhIkmr8
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-Request method:	GET
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 609
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"261-bQqCXYGEmTKh+QblA9s1EAhRLV8"
+
+{
+    "success": true,
+    "orders": [
+        {
+            "_id": "680d2c539ed280001b5d6082",
+            "ingredients": [
+                "61c0c5a71d1f82001bdaaa77",
+                "61c0c5a71d1f82001bdaaa79",
+                "61c0c5a71d1f82001bdaaa79"
+            ],
+            "status": "done",
+            "name": "Фалленианский экзо-плантаго бургер",
+            "createdAt": "2025-04-26T18:56:19.959Z",
+            "updatedAt": "2025-04-26T18:56:21.786Z",
+            "number": 219350
+        },
+        {
+            "_id": "680d2c579ed280001b5d6083",
+            "ingredients": [
+                "61c0c5a71d1f82001bdaaa76"
+            ],
+            "status": "done",
+            "name": "Минеральный бургер",
+            "createdAt": "2025-04-26T18:56:23.114Z",
+            "updatedAt": "2025-04-26T18:56:24.963Z",
+            "number": 219351
+        }
+    ],
+    "total": 219351,
+    "totalToday": 117
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmVkOWVkMjgwMDAxYjVkMzA1YiIsImlhdCI6MTc0NTQxMzg3MCwiZXhwIjoxNzQ1NDE1MDcwfQ.7ka142jQA-KQlIPU_TFoQj3KvmwuwwvzVenFNXPLkQU
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzUyOWVkMjgwMDAxYjVkNjA3ZCIsImlhdCI6MTc0NTY5Mzc3OSwiZXhwIjoxNzQ1Njk0OTc5fQ.Q5KyaXHbtAUH6myNAbGNmz6x_u_ULLlf6d2zxhIkmr8
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:17 GMT
+Date: Sat, 26 Apr 2025 18:56:27 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 603
+Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"25b-523ghL0MUxD8OzZTqZtMRDaZcF8"
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
 {
     "success": true,
-    "orders": [
-        {
-            "_id": "6808e6ee9ed280001b5d305e",
-            "ingredients": [
-                "61c0c5a71d1f82001bdaaa78"
-            ],
-            "status": "done",
-            "name": "Альфа-сахаридный бургер",
-            "createdAt": "2025-04-23T13:11:10.308Z",
-            "updatedAt": "2025-04-23T13:11:12.029Z",
-            "number": 218414
-        },
-        {
-            "_id": "6808e6f19ed280001b5d3061",
-            "ingredients": [
-                "61c0c5a71d1f82001bdaaa73",
-                "61c0c5a71d1f82001bdaaa78",
-                "61c0c5a71d1f82001bdaaa78"
-            ],
-            "status": "done",
-            "name": "Альфа-сахаридный space бургер",
-            "createdAt": "2025-04-23T13:11:13.344Z",
-            "updatedAt": "2025-04-23T13:11:15.139Z",
-            "number": 218415
-        }
-    ],
-    "total": 218415,
-    "totalToday": 579
-}
-HTTP/1.1 200 OK
-Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:17 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 603
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/"25b-523ghL0MUxD8OzZTqZtMRDaZcF8"
-
-{
-    "success": true,
-    "orders": [
-        {
-            "_id": "6808e6ee9ed280001b5d305e",
-            "ingredients": [
-                "61c0c5a71d1f82001bdaaa78"
-            ],
-            "status": "done",
-            "name": "Альфа-сахаридный бургер",
-            "createdAt": "2025-04-23T13:11:10.308Z",
-            "updatedAt": "2025-04-23T13:11:12.029Z",
-            "number": 218414
-        },
-        {
-            "_id": "6808e6f19ed280001b5d3061",
-            "ingredients": [
-                "61c0c5a71d1f82001bdaaa73",
-                "61c0c5a71d1f82001bdaaa78",
-                "61c0c5a71d1f82001bdaaa78"
-            ],
-            "status": "done",
-            "name": "Альфа-сахаридный space бургер",
-            "createdAt": "2025-04-23T13:11:13.344Z",
-            "updatedAt": "2025-04-23T13:11:15.139Z",
-            "number": 218415
-        }
-    ],
-    "total": 218415,
-    "totalToday": 579
+    "message": "User successfully removed"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGetOrdersOfUnauthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.791">
-    <failure message="expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected kz.yandex.practicum.qa.sb.common.AuthorizationException to be thrown, but nothing was thrown
-	at org.junit.Assert.assertThrows(Assert.java:1028)
-	at org.junit.Assert.assertThrows(Assert.java:981)
-	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser(GetUserOrderTest.java:107)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  <testcase name="testGetOrdersOfUnauthorizedUser" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="8.571">
+    <failure message="Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser(GetUserOrderTest.java:118)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ]]></failure>
-    <system-out><![CDATA[Request method:	GET
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "эдуард.коновалов@hotmail.com",
+    "password": "p6sobhpypf",
+    "name": "клавдия.молчанова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 415
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw
+ETag: W/"19f-oD3aOxhewoQuVChhJZr17wlFIPY"
+
+{
+    "success": true,
+    "user": {
+        "email": "эдуард.коновалов@hotmail.com",
+        "name": "клавдия.молчанова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw",
+    "refreshToken": "44c237e8852fd7d8f98dcf0abcdc3824882a19721641882d4fc4caf1f0094f32e00bbf5e15d6a930"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "эдуард.коновалов@hotmail.com",
+    "password": "p6sobhpypf",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 415
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"19f-gq+Mk4EqkeaunOaXR/GAhE8wZqs"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw",
+    "refreshToken": "351168efda30277b193839f78e78eafc337b854609a80f47c00fdea84faffa84a3b95d236190ae0b",
+    "user": {
+        "email": "эдуард.коновалов@hotmail.com",
+        "name": "клавдия.молчанова"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "геннадии.гришина@yandex.ru",
+    "password": "wggkfmi2dk9",
+    "name": "татьяна.пахомов"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:28 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 409
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4OCIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.1F0JINUdf07wdWXQfKNlVnt4hI_-3Tl4Md7GyXC0n5I
+ETag: W/"199-nwlnC/I+MyGRrVjS2AN+Hd+DVBU"
+
+{
+    "success": true,
+    "user": {
+        "email": "геннадии.гришина@yandex.ru",
+        "name": "татьяна.пахомов"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4OCIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.1F0JINUdf07wdWXQfKNlVnt4hI_-3Tl4Md7GyXC0n5I",
+    "refreshToken": "208db721ec5e6991caca8be1877b8b728a532f3ca0d5a0604c280a172e4ea206b98063daf20fb52e"
+}
+Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa6c",
+        "61c0c5a71d1f82001bdaaa74",
+        "61c0c5a71d1f82001bdaaa77"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:31 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1785
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"6f9-AXKmBS0fp0LU2p3a5Tsrf6eMmVE"
+
+{
+    "success": true,
+    "name": "Фалленианский традиционный-галактический краторный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa6c",
+                "name": "Краторная булка N-200i",
+                "type": "bun",
+                "proteins": 80,
+                "fat": 24,
+                "carbohydrates": 53,
+                "calories": 420,
+                "price": 1255,
+                "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa74",
+                "name": "Соус традиционный галактический",
+                "type": "sauce",
+                "proteins": 42,
+                "fat": 24,
+                "carbohydrates": 42,
+                "calories": 99,
+                "price": 15,
+                "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa77",
+                "name": "Плоды Фалленианского дерева",
+                "type": "main",
+                "proteins": 20,
+                "fat": 5,
+                "carbohydrates": 55,
+                "calories": 77,
+                "price": 874,
+                "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c5d9ed280001b5d608a",
+        "owner": {
+            "name": "клавдия.молчанова",
+            "email": "эдуард.коновалов@hotmail.com",
+            "createdAt": "2025-04-26T18:56:28.015Z",
+            "updatedAt": "2025-04-26T18:56:28.015Z"
+        },
+        "status": "done",
+        "name": "Фалленианский традиционный-галактический краторный бургер",
+        "createdAt": "2025-04-26T18:56:29.131Z",
+        "updatedAt": "2025-04-26T18:56:30.849Z",
+        "number": 219352,
+        "price": 2144
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa7a",
+        "61c0c5a71d1f82001bdaaa6d"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1305
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"519-h4VUABjre/8QQqd90IVf54SSTgI"
+
+{
+    "success": true,
+    "name": "Флюоресцентный астероидный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa7a",
+                "name": "Сыр с астероидной плесенью",
+                "type": "main",
+                "proteins": 84,
+                "fat": 48,
+                "carbohydrates": 420,
+                "calories": 3377,
+                "price": 4142,
+                "image": "https://code.s3.yandex.net/react/code/cheese.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa6d",
+                "name": "Флюоресцентная булка R2-D3",
+                "type": "bun",
+                "proteins": 44,
+                "fat": 26,
+                "carbohydrates": 85,
+                "calories": 643,
+                "price": 988,
+                "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c609ed280001b5d608b",
+        "owner": {
+            "name": "клавдия.молчанова",
+            "email": "эдуард.коновалов@hotmail.com",
+            "createdAt": "2025-04-26T18:56:28.015Z",
+            "updatedAt": "2025-04-26T18:56:28.015Z"
+        },
+        "status": "done",
+        "name": "Флюоресцентный астероидный бургер",
+        "createdAt": "2025-04-26T18:56:32.092Z",
+        "updatedAt": "2025-04-26T18:56:33.737Z",
+        "number": 219353,
+        "price": 5130
+    }
+}
 Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -794,7 +730,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhlNmY0OWVkMjgwMDAxYjVkMzA2MiIsImlhdCI6MTc0NTQxMzg3NiwiZXhwIjoxNzQ1NDE1MDc2fQ.oLwVtxV45CPkY4sIUknxAt5Sr7lIf0y3MAKtwQXgd3M
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4OCIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.1F0JINUdf07wdWXQfKNlVnt4hI_-3Tl4Md7GyXC0n5I
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -802,45 +738,54 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:18 GMT
+Date: Sat, 26 Apr 2025 18:56:35 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 60
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3c-+JIQ3Mappth3mlzWS12W9DCmEoo"
+ETag: W/"3c-p5mksAn6POyNukVdpShbj7RH5ZU"
 
 {
     "success": true,
     "orders": [
         
     ],
-    "total": 218415,
-    "totalToday": 579
+    "total": 219353,
+    "totalToday": 119
 }
-HTTP/1.1 200 OK
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzVjOWVkMjgwMDAxYjVkNjA4NSIsImlhdCI6MTc0NTY5Mzc4OCwiZXhwIjoxNzQ1Njk0OTg4fQ.cnKj2BeHUpy_hcGxe7PZVZHZf9UUM9_TgjFd7O5oJkw
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:18 GMT
+Date: Sat, 26 Apr 2025 18:56:36 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 60
+Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3c-+JIQ3Mappth3mlzWS12W9DCmEoo"
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
 {
     "success": true,
-    "orders": [
-        
-    ],
-    "total": 218415,
-    "totalToday": 579
+    "message": "User successfully removed"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="testGetOrdersWithoutAuthorizationHeader" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="0.265">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+  <testcase name="testGetOrdersWithoutAuthorizationHeader" classname="kz.yandex.practicum.qa.sb.order.GetUserOrderTest" time="8.236">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -850,7 +795,261 @@ Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "email": "наталья.гуляева@ya.ru",
+    "password": "u32ruxx81",
+    "name": "анжела.гаврилова"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:36 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 405
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NiwiZXhwIjoxNzQ1Njk0OTk2fQ.AvvEYgZtfCKZE3GQBRCSrkn4e3bnVuVnXlY8wZro-9E
+ETag: W/"195-KIYmnz32Lmj4z7idc+YZtLqy1ms"
+
+{
+    "success": true,
+    "user": {
+        "email": "наталья.гуляева@ya.ru",
+        "name": "анжела.гаврилова"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NiwiZXhwIjoxNzQ1Njk0OTk2fQ.AvvEYgZtfCKZE3GQBRCSrkn4e3bnVuVnXlY8wZro-9E",
+    "refreshToken": "0535a6036f7e6016d2a2d53bbdff49b387d24629a6a3b86dceddddac36de0be3aba2793d62d9a883"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "наталья.гуляева@ya.ru",
+    "password": "u32ruxx81",
+    "name": null
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 405
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"195-5NoEouAnbbPF6/dG+nKHDV/DGEk"
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.H8Tv1tSKjeqk0lNRgH6VXZzP7SRFohZHXshXqdhZzO0",
+    "refreshToken": "51bb591d4ace1c6f5be7f9dca32f19830521a760428e5ee890f11a4ef9d4490ad49f4d2183596f50",
+    "user": {
+        "email": "наталья.гуляева@ya.ru",
+        "name": "анжела.гаврилова"
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "валерии.жукова@mail.ru",
+    "password": "omjbpvask4y39x",
+    "name": "виктор.горбачева"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 405
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY1OWVkMjgwMDAxYjVkNjA5MCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.lFcoMq56JGgX73mZH_4Vu3c-vWEgagjP2d4OVnb84q0
+ETag: W/"195-3Y+BjVBDNEsm7ngQOVo8+DoGgB0"
+
+{
+    "success": true,
+    "user": {
+        "email": "валерии.жукова@mail.ru",
+        "name": "виктор.горбачева"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY1OWVkMjgwMDAxYjVkNjA5MCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.lFcoMq56JGgX73mZH_4Vu3c-vWEgagjP2d4OVnb84q0",
+    "refreshToken": "097dc728d60014d32c9f6053ef2f34b27352d6b59976c5464a63b85a1a7076b5ac8695eac9559b86"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.H8Tv1tSKjeqk0lNRgH6VXZzP7SRFohZHXshXqdhZzO0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa73"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 810
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"32a-I4fUhpMFBe83YSE3k1OID7Gqu9A"
+
+{
+    "success": true,
+    "name": "Space бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa73",
+                "name": "Соус фирменный Space Sauce",
+                "type": "sauce",
+                "proteins": 50,
+                "fat": 22,
+                "carbohydrates": 11,
+                "calories": 14,
+                "price": 80,
+                "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c659ed280001b5d6092",
+        "owner": {
+            "name": "анжела.гаврилова",
+            "email": "наталья.гуляева@ya.ru",
+            "createdAt": "2025-04-26T18:56:36.587Z",
+            "updatedAt": "2025-04-26T18:56:36.587Z"
+        },
+        "status": "done",
+        "name": "Space бургер",
+        "createdAt": "2025-04-26T18:56:37.709Z",
+        "updatedAt": "2025-04-26T18:56:39.267Z",
+        "number": 219354,
+        "price": 80
+    }
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.H8Tv1tSKjeqk0lNRgH6VXZzP7SRFohZHXshXqdhZzO0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa6c",
+        "61c0c5a71d1f82001bdaaa74",
+        "61c0c5a71d1f82001bdaaa75"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sat, 26 Apr 2025 18:56:43 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1809
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"711-D09WO8QG7ceDnfMIBZ/iCDgVDJU"
+
+{
+    "success": true,
+    "name": "Антарианский традиционный-галактический краторный бургер",
+    "order": {
+        "ingredients": [
+            {
+                "_id": "61c0c5a71d1f82001bdaaa6c",
+                "name": "Краторная булка N-200i",
+                "type": "bun",
+                "proteins": 80,
+                "fat": 24,
+                "carbohydrates": 53,
+                "calories": 420,
+                "price": 1255,
+                "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa74",
+                "name": "Соус традиционный галактический",
+                "type": "sauce",
+                "proteins": 42,
+                "fat": 24,
+                "carbohydrates": 42,
+                "calories": 99,
+                "price": 15,
+                "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+                "__v": 0
+            },
+            {
+                "_id": "61c0c5a71d1f82001bdaaa75",
+                "name": "Соус с шипами Антарианского плоскоходца",
+                "type": "sauce",
+                "proteins": 101,
+                "fat": 99,
+                "carbohydrates": 100,
+                "calories": 100,
+                "price": 88,
+                "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+                "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+                "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+                "__v": 0
+            }
+        ],
+        "_id": "680d2c689ed280001b5d6093",
+        "owner": {
+            "name": "анжела.гаврилова",
+            "email": "наталья.гуляева@ya.ru",
+            "createdAt": "2025-04-26T18:56:36.587Z",
+            "updatedAt": "2025-04-26T18:56:36.587Z"
+        },
+        "status": "done",
+        "name": "Антарианский традиционный-галактический краторный бургер",
+        "createdAt": "2025-04-26T18:56:40.531Z",
+        "updatedAt": "2025-04-26T18:56:42.320Z",
+        "number": 219355,
+        "price": 1358
+    }
+}
 Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/orders
 Proxy:			<none>
@@ -865,7 +1064,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 Unauthorized
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:18 GMT
+Date: Sat, 26 Apr 2025 18:56:43 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -877,19 +1076,32 @@ ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
     "success": false,
     "message": "You should be authorised"
 }
-HTTP/1.1 401 Unauthorized
+Request method:	DELETE
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGQyYzY0OWVkMjgwMDAxYjVkNjA4ZCIsImlhdCI6MTc0NTY5Mzc5NywiZXhwIjoxNzQ1Njk0OTk3fQ.H8Tv1tSKjeqk0lNRgH6VXZzP7SRFohZHXshXqdhZzO0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 23 Apr 2025 13:11:18 GMT
+Date: Sat, 26 Apr 2025 18:56:44 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"36-9ndkQYJpZ8s0sMN790Nuh0MLq/U"
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 
 {
-    "success": false,
-    "message": "You should be authorised"
+    "success": true,
+    "message": "User successfully removed"
 }
 ]]></system-out>
   </testcase>

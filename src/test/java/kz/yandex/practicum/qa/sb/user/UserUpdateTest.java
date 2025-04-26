@@ -1,103 +1,133 @@
 package kz.yandex.practicum.qa.sb.user;
 
-import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.Description;
+import io.restassured.response.Response;
 import kz.yandex.practicum.qa.sb.common.ApiException;
-import kz.yandex.practicum.qa.sb.common.AuthorizationException;
+import kz.yandex.practicum.qa.sb.common.Constants;
 import org.apache.http.HttpStatus;
-import org.junit.AfterClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
+import static kz.yandex.practicum.qa.sb.AssertionFailMessage.*;
 import static kz.yandex.practicum.qa.sb.FakerInstance.FAKER;
 import static kz.yandex.practicum.qa.sb.user.UserRestClient.*;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Задание 2: API
- *  Изменение данных пользователя:
- *      с авторизацией,
- *      без авторизации,
+ * Изменение данных пользователя:
+ * с авторизацией,
+ * без авторизации,
  */
-public class UserUpdateTest {
+class UserUpdateTest {
 
-    private static final User USER_AUTHORIZED;
-    private static final User USER_UNAUTHORIZED;
-    
-    static {
-        try {
-            USER_AUTHORIZED = login(create(new User()
-                    .setEmail(FAKER.internet().emailAddress())
-                    .setPassword(FAKER.internet().password())
-                    .setName(FAKER.name().username())));
+    private static final String ERROR_MESSAGE_USER_ALREADY_EXISTS = "User with such email already exists";
 
-            USER_UNAUTHORIZED = create(new User().setEmail(FAKER.internet().emailAddress())
-                    .setPassword(FAKER.internet().password())
-                    .setName(FAKER.name().username()));
-            
-        } catch (ApiException e) {
-            throw new RuntimeException(e);
-        }
+    private User userAuthorized;
+    private User userUnauthorized;
 
-        System.out.printf("Authorized user: %s\n", USER_AUTHORIZED);
-        System.out.printf("Unauthorized user: %s\n", USER_UNAUTHORIZED);
+    @BeforeEach
+    void setUp() throws ApiException {
+        userAuthorized = login(create(new User()
+                .setEmail(FAKER.internet().emailAddress())
+                .setPassword(FAKER.internet().password())
+                .setName(FAKER.name().username())));
+
+        userUnauthorized = create(new User()
+                .setEmail(FAKER.internet().emailAddress())
+                .setPassword(FAKER.internet().password())
+                .setName(FAKER.name().username()));
+
+        System.out.printf("Authorized user: %s\n", userAuthorized);
+        System.out.printf("Unauthorized user: %s\n", userUnauthorized);
     }
 
-    @AfterClass
-    public static void tearDown() throws ApiException {
-        delete(USER_AUTHORIZED.getAccessToken());
-        delete(USER_UNAUTHORIZED.getAccessToken());
+    @AfterEach
+    void tearDown() throws ApiException {
+        delete(userAuthorized.getAccessToken());
+        delete(userUnauthorized.getAccessToken());
     }
 
     @Test
-    @DisplayName("Изменение email авторизованного пользователя")
+    @DisplayName("Тест изменения email авторизованного пользователя")
     public void testUpdateAuthorizedUserEmail() {
-        try {
-            String newEmail = USER_AUTHORIZED.getEmail() + "_updated";
-            User updatedUser = update(USER_AUTHORIZED.clone().setEmail(newEmail));
-            assertEquals(newEmail, updatedUser.getEmail());
-        } catch (ApiException e) {
-            System.err.printf("%d %s", e.getStatus(), e.getMessage());
-            e.printStackTrace();
-            fail(e.getMessage());
-        }
+
+        String newEmail = userAuthorized.getEmail() + "_updated";
+
+        assertDoesNotThrow(() -> {
+            Response updateUserResponse = UserRestAssuredUtil.update(userAuthorized.clone().setEmail(newEmail));
+
+            int statusCode = updateUserResponse.getStatusCode();
+
+            assertEquals(HttpStatus.SC_OK, statusCode, HTTP_STATUS_CODE_MISMATCH);
+
+            UserResponse updatedUserResponse = updateUserResponse.as(UserResponse.class);
+
+            assertTrue(updatedUserResponse.isSuccess(), RESPONSE_BODY_SUCCESS_ATTRIBUTE_VALUE_MISMATCH);
+
+            User updatedUser = updatedUserResponse.getUser();
+
+            assertEquals(newEmail, updatedUser.getEmail(), USER_EMAIL_MISMATCH);
+        });
     }
 
     @Test
-    @DisplayName("Изменение email авторизованного пользователя на уже использующийся другим пользователем")
+    @DisplayName("Тест изменения email авторизованного пользователя на уже использующийся другим пользователем")
     public void testUpdateAuthorizedUserExistentEmail() {
 
-        String newEmail = USER_UNAUTHORIZED.getEmail() + "_updated";
+        String newEmail = userUnauthorized.getEmail() + "_updated";
 
         ApiException apiException = assertThrows(ApiException.class, () -> {
-            update(USER_AUTHORIZED.clone().setEmail(newEmail));
+            update(userAuthorized.clone().setEmail(newEmail));
         });
-        assertEquals(HttpStatus.SC_FORBIDDEN, apiException.getStatus());
-        assertEquals("User with such email already exists", apiException.getMessage());
+
+        assertEquals(HttpStatus.SC_FORBIDDEN, apiException.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+
+        assertEquals(ERROR_MESSAGE_USER_ALREADY_EXISTS, apiException.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение имени авторизованного пользователя")
+    @DisplayName("Тест изменения имени авторизованного пользователя")
     public void testUpdateAuthorizedUserName() {
-        try {
-            String newName = USER_AUTHORIZED.getName() + "_updated";
-            User updatedUser = update(USER_AUTHORIZED.clone().setName(newName));
-            assertEquals(newName, updatedUser.getName());
-        } catch (ApiException e) {
-            System.err.printf("%d %s", e.getStatus(), e.getMessage());
-            fail(e.getMessage());
-        }
+
+        String newName = userAuthorized.getName() + "_updated";
+
+        assertDoesNotThrow(() -> {
+            Response updateUserResponse = UserRestAssuredUtil.update(userAuthorized.clone().setName(newName));
+
+            int statusCode = updateUserResponse.getStatusCode();
+
+            assertEquals(HttpStatus.SC_OK, statusCode, HTTP_STATUS_CODE_MISMATCH);
+
+            UserResponse updatedUserResponse = updateUserResponse.as(UserResponse.class);
+
+            assertTrue(updatedUserResponse.isSuccess(), RESPONSE_BODY_SUCCESS_ATTRIBUTE_VALUE_MISMATCH);
+
+            User updatedUser = updatedUserResponse.getUser();
+
+            assertEquals(newName, updatedUser.getName(), USER_NAME_MISMATCH);
+        });
     }
 
     @Test
-    @DisplayName("Изменение пароля авторизованного пользователя")
+    @DisplayName("Тест изменения пароля авторизованного пользователя")
     public void testUpdateAuthorizedUserPassword() {
-        try {
-            String newPassword = USER_AUTHORIZED.getPassword() + "_updated";
-            User updatedUser = update(USER_AUTHORIZED.clone().setPassword(newPassword));
-            assertEquals(newPassword, updatedUser.getPassword());
-        } catch (ApiException e) {
-            System.err.printf("%d %s", e.getStatus(), e.getMessage());
-            fail(e.getMessage());
-        }
+
+        String newPassword = userAuthorized.getPassword() + "_updated";
+
+        assertDoesNotThrow(() -> {
+            Response updateUserResponse = UserRestAssuredUtil.update(userAuthorized.clone().setPassword(newPassword));
+
+            int statusCode = updateUserResponse.getStatusCode();
+
+            assertEquals(HttpStatus.SC_OK, statusCode, HTTP_STATUS_CODE_MISMATCH);
+
+            UserResponse updatedUserResponse = updateUserResponse.as(UserResponse.class);
+
+            assertTrue(updatedUserResponse.isSuccess(), RESPONSE_BODY_SUCCESS_ATTRIBUTE_VALUE_MISMATCH);
+        });
     }
 
     /* При создании нового пользователя API возвращает accessToken,
@@ -111,62 +141,62 @@ public class UserUpdateTest {
      * однако это происходит только если намеренно не передать заголовок запроса Authorization.
      */
     @Test
-    @DisplayName("Изменение email неавторизованного пользователя")
+    @DisplayName("Тест изменения email неавторизованного пользователя")
     public void testUpdateUnauthorizedUserEmail() {
-
-        String newEmail = USER_UNAUTHORIZED.getEmail() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setEmail(newEmail));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setEmail(userUnauthorized.getEmail() + "_updated"));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_INVALID_CREDENTIALS, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение имени неавторизованного пользователя")
+    @DisplayName("Тест изменения имени неавторизованного пользователя")
     public void testUpdateUnauthorizedUserName() {
-
-        String newName = USER_UNAUTHORIZED.getName() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setName(newName));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setName(userUnauthorized.getName() + "_updated"));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_INVALID_CREDENTIALS, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение пароля неавторизованного пользователя")
+    @DisplayName("Тест изменения пароля неавторизованного пользователя")
     public void testUpdateUnauthorizedUserPassword() {
-
-        String newPassword = USER_UNAUTHORIZED.getPassword() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setPassword(newPassword));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setPassword(userUnauthorized.getPassword() + "_updated"));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_INVALID_CREDENTIALS, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение email без заголовка Authorization")
+    @DisplayName("Тест изменения email без заголовка Authorization")
     public void testUpdateUserEmailWithoutAuthorization() {
-
-        String newEmail = USER_UNAUTHORIZED.getEmail() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setEmail(newEmail).setAccessToken(null));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setEmail(userUnauthorized.getEmail() + "_updated").setAccessToken(null));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_SHOULD_BE_AUTHORIZED, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение имени без заголовка Authorization")
+    @DisplayName("Тест изменения имени без заголовка Authorization")
     public void testUpdateUserNameWithoutAuthorization() {
-
-        String newName = USER_UNAUTHORIZED.getName() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setName(newName).setAccessToken(null));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setName(userUnauthorized.getName() + "_updated").setAccessToken(null));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_SHOULD_BE_AUTHORIZED, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 
     @Test
-    @DisplayName("Изменение пароля без заголовка Authorization")
+    @DisplayName("Тест изменения пароля без заголовка Authorization")
     public void testUpdateUserPasswordWithoutAuthorization() {
-
-        String newPassword = USER_UNAUTHORIZED.getPassword() + "_updated";
-        assertThrows(AuthorizationException.class, () -> {
-            update(USER_UNAUTHORIZED.clone().setPassword(newPassword).setAccessToken(null));
+        ApiException e = assertThrows(ApiException.class, () -> {
+            update(userUnauthorized.clone().setPassword(userUnauthorized.getPassword() + "_updated").setAccessToken(null));
         });
+        assertEquals(HttpStatus.SC_UNAUTHORIZED, e.getStatus(), HTTP_STATUS_CODE_MISMATCH);
+        assertEquals(Constants.ERROR_MESSAGE_SHOULD_BE_AUTHORIZED, e.getMessage(), ERROR_MESSAGE_MISMATCH);
     }
 }
