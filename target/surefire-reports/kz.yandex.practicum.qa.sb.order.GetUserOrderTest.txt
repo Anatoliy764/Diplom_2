@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: kz.yandex.practicum.qa.sb.order.GetUserOrderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 26.06 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.order.GetUserOrderTest
+kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser -- Time elapsed: 9.237 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.opentest4j.AssertionFailedError: Тело ответа не содержит ожидаемое значение в атрибуте total ==> expected: <2> but was: <219351>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3199)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfAuthorizedUser(GetUserOrderTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.opentest4j.AssertionFailedError: Тело ответа не содержит ожидаемое значение в атрибуте total ==> expected: <2> but was: <219351>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.lambda$testGetOrdersOfAuthorizedUser$6(GetUserOrderTest.java:86)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+
+kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser -- Time elapsed: 8.571 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.order.GetUserOrderTest.testGetOrdersOfUnauthorizedUser(GetUserOrderTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+

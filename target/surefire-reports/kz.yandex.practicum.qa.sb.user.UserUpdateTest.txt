@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: kz.yandex.practicum.qa.sb.user.UserUpdateTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 33.15 s <<< FAILURE! -- in kz.yandex.practicum.qa.sb.user.UserUpdateTest
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserName -- Time elapsed: 3.210 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserName(UserUpdateTest.java:156)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserPassword -- Time elapsed: 3.256 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserPassword(UserUpdateTest.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateAuthorizedUserExistentEmail -- Time elapsed: 3.222 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateAuthorizedUserExistentEmail(UserUpdateTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
+kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserEmail -- Time elapsed: 3.268 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected kz.yandex.practicum.qa.sb.common.ApiException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at kz.yandex.practicum.qa.sb.user.UserUpdateTest.testUpdateUnauthorizedUserEmail(UserUpdateTest.java:146)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
