@@ -61,9 +61,9 @@ public class CreateOrderTest {
                 // с ингредиентами,
                 Arguments.of(IngredientRestClient.getRandomIngredientIds(ThreadLocalRandom.current().nextInt(1, 4)), null, null),
                 // без ингредиентов,
-                Arguments.of(Collections.emptyList(), "Ingredient ids must be provided", 400),
+                Arguments.of(Collections.emptyList(), "Ingredient ids must be provided", HttpStatus.SC_BAD_REQUEST),
                 // с неверным хешем ингредиентов
-                Arguments.of(List.of(UUID.randomUUID(), UUID.randomUUID()), null, 500)
+                Arguments.of(List.of(UUID.randomUUID(), UUID.randomUUID()), null, HttpStatus.SC_INTERNAL_SERVER_ERROR)
         );
     }
 
